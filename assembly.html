@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org">
+<title>EE 209: Assembly Language Programming Assignment</title>
+</head>
+<body>
+<center>
+<h1>KAIST<br>
+EE 209: Programming Structures for EE</h1>
+
+<h2>Assignment 4: Assembly Language Programming</h2>
+</center>
+
+<hr>
+
+<h3>Purpose</h3>
+
+<p>The purpose of this assignment is to help you learn about computer architecture, assembly language programming, and testing strategies. It also will give you the opportunity to learn more about the GNU/Unix programming tools, especially <code>bash</code>, <code>emacs</code>, <code>gcc209</code>, and <code>gdb</code> for assembly language programs.</p>
+
+
+<hr>
+
+<h3>Rules</h3>
+
+<p> Part b is "on your own" part, and will take up 20% of the grade. </p>
+
+<hr>
+
+<h3>A Desk Calculator Program in Assembly Language</h3>
+
+<h4>Part a: Translate to Assembly Language</h4>
+
+<p>The Unix operating system has a command named <code>dc</code> (<em>d</em>esk <em>c</em>alculator). In its simplest form, <code>dc</code> reads a list of numbers from the standard input stream and uses a set of command keys to display results of user-specified operations on standard output stream. <br></p>
+
+<p>In <code>dc</code>, the operands (numbers) and operators are added in <it>reverse polish</it> (also known as <it>postfix</it>) notation. In this scheme, the operator follows the operands. The following example
+execution run explains how <code>dc</code> can be used. 
+
+<pre style="margin-left:2em;">
+567
+343223
++
+p
+323790
+q
+</pre>
+
+<p><code>dc</code> uses a stack to store numbers in LIFO order (last-in, first-out). Whenever it encounters an operator, it first pops out the last 2 operands from the stack, runs the operation on those numbers and then pushes the resultant
+value back in the stack. The command <code>p</code> is used to print the value that lies on the top of the stack. Please note that <code>p</code> only retrieves the value without <u>popping</u> (this is also known as a peek operation). The
+user can either quit the program by passing <code>q</code> or <code>EOF</code> character to the program. In other words, if the numbers mentioned above are stored in a file named values.txt then <code>dc</code> can be run in the following manner:</p>
+
+<pre style="margin-left:2em">
+$ dc &lt; values.txt
+</pre>
+
+<p>which will print the result to the standard output stream as:</p>
+
+<pre style="margin-left:2em">
+  323790
+</pre>
+
+The <code>dc</code> tool supports a number of operators and subsidiary commands which you can study on the man page.
+For this assignment, you are required to implement the following operations only.
+
+<font color="red">
+<p> Printing Commands: <code>p</code> <br>
+Arithmentic operators: <code> +, -, *, /, %, ^</code> <br>
+Stack Control: <code> c, d, r </code><br>
+Strings: <code> q </code> <br>
+</font>
+
+<p>You can assume that operands can only be integers. That is, we will NOT pass alphanumeric characters as operands. Also, we will not pass invalid operators (e.g. <code>+s</code>) to the program. Moreover we will test <code>dc</code> by passing only 1 operand per line (meaning each operand will be followed by a newline character. You can use the concepts you have studied in class associated with <code>esp</code> and <code>ebp</code> registers to simulate the stack in the main function. We are providing a <a href="./src/mydc.s">startup file</a> which contains the pseudo-code of dc.s file. Please go through the pseudo-code before you begin writing the program. It is acceptable to use global (i.e. bss section or data section) variables in <code>mydc.s</code>. Please make sure that you create your own function to implement the power (^) arithmetic operator.</p>
+
+<h4>Part b: Test</h4>
+
+<p>Design a test plan for your <code>mydc</code> program. Your test plan should include tests in three categories: (1) boundary testing and (2) stress testing.</p>
+
+<p>Create text files to test your programs. Name each such file such that its prefix is <code>mydc</code> and its suffix is <code>.txt</code>. The command <code>ls mydc*.txt</code> should display the names of all <code>mydc</code> test files, and only those files.</p>
+
+<p>Describe your <code>mydc</code> test plan in your readme file. Your description should have this structure:</p>
+
+<p style="margin-left:2em;"><code>mydc</code> boundary tests:</p>
+
+<p style="margin-left:4em;"><code>mydc<em>XXX</em>.txt</code>: <em>Description of the characteristics of that file, and how it tests boundary conditions of your <code>mydc</code> program.</em><br>
+<code>mydc<em>YYY</em>.txt</code>: <em>Description of the characteristics of that file, and how it tests boundary conditions of your <code>mydc</code> program.</em><br>
+...</p>
+
+<p style="margin-left:2em;"><code>mydc</code> stress tests:</p>
+
+<p style="margin-left:4em;"><code>mydc<em>XXX</em>.txt</code>: <em>Description of the characteristics of that file, and how it stress tests your <code>mydc</code> program.</em><br>
+<code>mydc<em>YYY</em>.txt</code>: <em>Description of the characteristics of that file, and how it stress tests your <code>mydc</code> program.</em><br>
+...</p>
+
+
+<p>Finally, create a Bash shell script named <code>testmydc.sh</code> to automate your <code>mydc</code> test plan. A Bash shell script is simply a text file that contains commands, and that has been made executable via the <code>chmod</code> command, for example, <code>chmod u+x testmydc.sh</code>.</p>
+
+<p>The <code>testmydc.sh</code> script should build a <code>mydc</code> program from the given C code, build a <code>mydc</code> program from your assembly language code, execute both programs, and compare the output.</p>
+
+<p>It is acceptable for your <code>testmydc.sh</code> script to call other scripts that you create. Each such script should have a name that is prefixed with <code>testmydc</code>. The command <code>ls testmydc*</code> should display the names of all <code>mydc</code> test scripts, and only those files.</p>
+
+<font color="red">
+<h4>Part c: Bonus</h4>
+This part is optional. Please improve the error handling of <code>mydc.s</code> so that it generates error if the user
+inserts alphanumeric characters in operands. For example, <code>mydc.s</code> generates the following output in case
+alphabets are mixed with numbers:
+
+<pre style="margin-left:2em;">
+567tu
+dc: 't' (0164) unimplemented
+dc: 'u' (0165) unimplemented
+</pre>
+</font>
+<hr>
+
+<h3>Logistics</h3>
+
+<p>Develop on lab machines. Use <code>emacs</code> to create source code. Use <code>gdb</code> to debug.</p>
+
+<p><strong>Do not use a C compiler to produce any of your assembly language code. Doing so would be considered an instance of academic dishonesty.</strong> Instead produce your assembly language code manually.</p>
+
+<p>We encourage you to develop "flattened" pseudo-code (as described in precepts) to bridge the gap between the given pseudo-code and your assembly language code. Using flattened pseudo-code as a bridge can eliminate <em>logic</em> errors from your assembly language code, leaving only the possibility of <em>translation</em> errors.</p>
+
+<p>We also encourage you to use your flattened pseudo-code as comments in your assembly language code. Such comments can clarify your assembly language code substantially.</p>
+
+<p>You should submit:</p>
+
+<ul>
+<li>Your <code>mydc.s</code> file.</li>
+
+<li>Your <code>testmydc.sh</code> script, and any other scripts that it calls.</li>
+
+<li>The data files that test your <code>mydc</code> program.</li>
+
+<li>A <code>readme</code> file.</li>
+</ul>
+
+<p>Your <code>readme</code> file should contain:</p>
+
+<ul>
+<li>Your name and student ID.</li>
+
+<li>A description of whatever help (if any) you received from others while doing the assignment, and the names of any individuals with whom you collaborated, as prescribed by the course "Policy" Web page.</li>
+
+<li>Your <code>mydc</code> test plan in the format specified above.</li>
+
+<li>(Optionally) An indication of how much time you spent doing the assignment.</li>
+
+<li>(Optionally) Your assessment of the assignment.</li>
+
+<li>(Optionally) Any information that will help us to grade your work in the most favorable light. In particular you should describe all known bugs.</li>
+</ul>
+
+<p>Submit your work electronically using the commands:</p>
+
+<pre style="margin-left:2em;">
+mkdir 20091234_assign4
+mv mydc.s testmydc.sh <em>anyBashScriptsCalledByTestmydc.sh</em> mydc*.txt readme 20091234_assign4
+tar zcf 20091234_assign4.tar.gz 20091234_assign4
+</pre>
+
+<p>Please do not submit <code>emacs</code> backup files, that is, files that end with '~'.</p>
+
+<hr>
+
+<h3>Grading</h3>
+
+<p>As always, we will grade your work on quality from the user's and programmer's points of view. To encourage good coding practices, we will deduct points if <code>gcc209</code> generates warning messages.</p>
+
+<p>Comments in your assembly language programs are especially important. Each assembly language function -- especially the <code>main</code> function -- should have a comment that describes what the function does. Local comments within your assembly language functions are equally important. Comments copied from corresponding "flattened" C code are particularly helpful.</p>
+
+<p>Your assembly language code should use <code>.equ</code> directives to avoid "magic numbers." In particular, you should use <code>.equ</code> directives to give meaningful names to:</p>
+
+<ul>
+<li>Enumerated constants, for example: <code>.equ TRUE, 1</code>.</li>
+
+<li>Parameter stack offsets, for example: <code>.equ OADDEND1, 8</code>.</li>
+
+<li>Local variable stack offsets, for example: <code>.equ UICARRY, -4</code>.</li>
+
+<li>Structure field offsets, for example: <code>.equ ILENGTH, 0</code>.</li>
+
+<li>Stack offsets at which callee-save registers are stored, for example: <code>.equ EBXOFFSET, -4</code>.</li>
+
+</ul>
+
+<p>Testing is a substantial aspect of the assignment. Approximately 20% of the grade will be based upon your <code>mydc</code> test plan as described in your readme file, and as implemented by your test scripts and data files.</p>
+
+</body>
+</html>

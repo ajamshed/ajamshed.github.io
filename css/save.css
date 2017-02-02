@@ -1,0 +1,325 @@
+li {color: #000000; list-style-type: square} 
+ul {color: #000000; list-style-type: square} 
+ol {color: #000000} 
+
+h3	{font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: none}
+h3	a:link {font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: none}
+h3 a:visited {font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: none} 
+h3 a:hover {font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: underline; background-color: #FEEDEF} 
+h3 a:active {font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: none}
+
+h4	{font-family: Arial, Helvetica, sans-serif; font-size: 80%; color: #CC0033; font-weight: bold}
+h4	a:link {color: #CC0033; text-decoration: none} 
+h4 a:visited {color: #DD0000; text-decoration: none}
+h4 a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+h4 a:active {color: #DD0000; text-decoration: none}
+
+img{border:none;}
+
+.mytext {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000} 
+.mytext a:link {color: #CC0033; text-decoration: underline} 
+.mytext a:visited {color: #DD0000; text-decoration: underline} 
+.mytext a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.mytext a:active {color: #DD0000; text-decoration: underline} 
+
+.mytext2 {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000} 
+.mytext2 a:link {color: #CC0033; text-decoration: none} 
+.mytext2 a:visited {color: #DD0000; text-decoration: none} 
+.mytext2 a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.mytext2 a:active {color: #DD0000; text-decoration: none} 
+
+.mytextbold {font-family: Arial, Helvetica, sans-serif; font-size: 70%; font-weight: bold;}
+.mytextbold a:link {color: #CC0033; text-decoration: none} 
+.mytextbold a:visited {color: #DD0000; text-decoration: none} 
+.mytextbold a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.mytextbold a:active {color: #DD0000; text-decoration: none}  
+
+.italicbold {font-family: Arial, Helvetica, sans-serif; font-size: 70%; font-weight: bold; font-style:italic;}
+.italicbold a:link {color: #CC0033; text-decoration: none} 
+.italicbold a:visited {color: #DD0000; text-decoration: none} 
+.italicbold a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.italicbold a:active {color: #DD0000; text-decoration: none}   
+
+.box {border-color:#666666; border-width: medium;}
+
+.frontbox {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000; border-width:thin; border-color:#333333;} 
+.frontbox a:link {color: #CC0033; text-decoration: none; border-width:thick; border-color:#333333;} 
+.frontbox a:visited {color: #DD0000; text-decoration: none} 
+.frontbox a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.frontbox a:active {color: #DD0000; text-decoration: none}
+
+.news {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000} 
+.news a:link {color: #CC0033; text-decoration: none} 
+.news a:visited {color: #DD0000; text-decoration: none} 
+.news a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.news a:active {color: #DD0000; text-decoration: none}
+
+.menu {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000} 
+.menu a:link {color: #000000; text-decoration: none} 
+.menu a:visited {color: #333333; text-decoration: none} 
+.menu a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.menu a:active {color: #000000; text-decoration: underline}
+
+.tiny {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #999999} 
+.tiny a:link {color: #999999; text-decoration: none} 
+.tiny a:visited {color: #999999; text-decoration: none} 
+.tiny a:hover {color: #999999; text-decoration: underline; background-color: #FEEDEF} 
+.tiny a:active {color: #000000; text-decoration: none}
+
+.h3	{font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; text-decoration: none}
+.h3	a:link {color: #CC0033; text-decoration: none}
+.h3 a:visited {color: #DD0000; text-decoration: none} 
+.h3 a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.h3 a:active {color: #DD0000; text-decoration: none}
+
+.h2black {font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #000000; font-weight: bold; text-decoration: none}
+.h2black a:link {color: #000000; text-decoration: none}
+.h2black a:visited {color: #000000; text-decoration: none} 
+.h2black a:hover {color: #000000; text-decoration: underline; background-color: #FEEDEF} 
+.h2black a:active {color: #000000; text-decoration: none}
+
+.h4	{font-family: Arial, Helvetica, sans-serif; font-size: 80%; color: #CC0033; font-weight: bold}
+.h4	a:link {color: #CC0033; text-decoration: none} 
+.h4 a:visited {color: #DD0000; text-decoration: none}
+.h4 a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.h4 a:active {color: #DD0000; text-decoration: none}
+
+.h4black{font-family: Arial, Helvetica, sans-serif; font-size: 80%; font-weight: bold}
+
+.here {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #CC0033} 
+.here a:link {color: #CC0033; text-decoration: none} 
+.here a:visited {color: #DD0000; text-decoration: none} 
+.here a:hover {color: #000000; text-decoration: underline; background-color: #FEEDEF} 
+.here a:active {color: #CC0033; text-decoration: none}
+
+.tinyblack {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000} 
+.tinyblack a:link {color: #DE0031; text-decoration: none} 
+.tinyblack a:visited {color: #DE0031; text-decoration: none} 
+.tinyblack a:hover {color: #DE0031; text-decoration: underline; background-color: #FEEDEF} 
+.tinyblack a:active {color: #000; text-decoration: none}
+
+.searchbackground {
+     padding-top: 2px;
+	 padding-bottom: 2px;
+	 padding-left: 5px;
+	 padding-right: 2px;
+	 border-width: 2px;
+	 border-style:solid; 
+	 border-color:#000000;
+	 background-color: #CCCCCC;
+	 font-family: Arial, Helvetica, sans-serif; font-size: 70%;
+	 }
+.searchbackground a:link {color: #CC0033; text-decoration: none}
+.searchbackground a:visited {color: #DD0000; text-decoration: none}
+.searchbackground a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.searchbackground a:active {color: #DD0000; text-decoration: none}	
+
+.wpblock {
+	 color:#FFFFFF;
+     padding-top: 10px;
+	 padding-bottom: 10px;
+	 padding-left: 10px;
+	 padding-right: 10px;
+	 border-width: 2px;
+	 border-style:solid; 
+	 border-color:#000000;
+	 background-color:#CC0033;
+	 font-family: Arial, Helvetica, sans-serif; font-size: 80%;
+	 }
+.wpblock a:link {color: #FFFFFF; text-decoration: none}
+.wpblock a:visited {color: #FFFFFF; text-decoration: none}
+.wpblock a:hover {color: #FFFFFF; text-decoration: underline; background-color: #FEEDEF} 
+.wpblock a:active {color: #FFFFFF; text-decoration: none}
+
+.wprightblock {
+	 width: 225px;
+	 float: right;
+	 color:#FFFFFF;
+	 padding-top: 2px;
+	 padding-bottom: 2px;
+	 padding-left: 5px;
+	 padding-right: 2px;
+	 border-width: 2px;
+	 border-style:solid; 
+	 border-color:#000000;
+	 background-color:#CC0033;
+	 font-family: Arial, Helvetica, sans-serif; font-size: 80%;
+	 }
+.wprightblock a:link {color: #FFFFFF; text-decoration: none}
+.wprightblock a:visited {color: #FFFFFF; text-decoration: none}
+.wprightblock a:hover {color: #FFFFFF; text-decoration: underline; background-color: #FEEDEF} 
+.wprightblock a:active {color: #FFFFFF; text-decoration: none}	
+
+.newsfeedsubhead {
+     background-color:#F0F0F0; 
+	 font-family:Arial, Helvetica, sans-serif; 
+	 font-weight:bold;
+	 font-size: 80%; 
+	 padding: 10px 10px 10px 10px;
+	 border-style:solid; border-width:thin; border-color:#333333}
+.newsfeedsubhead a:link {color: #CC0033; text-decoration: none}
+.newsfeedsubhead a:visited {color: #DE0031; text-decoration: none} 
+.newsfeedsubhead a:hover {color: #DE0031; text-decoration: underline; background-color: #FEEDEF} 
+.newsfeedsubhead a:active {color: #000; text-decoration: none}
+
+.updated {font-family:Arial, Helvetica, sans-serif; font-size: 70%; padding-top: 3px; padding-bottom: 3px;}
+.updated a:link {color: #DE0031; text-decoration: none}
+.updated a:visited {color: #DE0031; text-decoration: none} 
+.updated a:hover {color: #DE0031; text-decoration: underline; background-color: #FEEDEF} 
+.updated a:active {color: #000; text-decoration: none}
+
+.newsfeedtext {
+    font-family:Arial, Helvetica, sans-serif; font-size: 80%; 
+	padding: 3px 10px 3px 10px; 
+	border-style:solid; 
+	border-top-width: 0px;
+	border-right-width:thin; border-right-color:#666666;
+	border-bottom-width:thin; 
+	border-left-width:thin; border-left-color:#666666;
+	}
+	
+#real-centre450 {
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 450px;
+}
+
+#real-centre500 {
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
+.whatsnew {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+.whatsnew a:link {color: #CC0033; text-decoration: none; font-weight:bold;}
+.whatsnew a:visited {color: #DE0031; text-decoration: none; font-weight:bold;} 
+.whatsnew a:hover {color: #DE0031; text-decoration: underline; font-weight:bold; background-color: #FEEDEF} 
+.whatsnew a:active {color: #000000; text-decoration: none; font-weight:bold;}
+
+/* Calendar classes*/
+.calendarHeader {
+	width:140px; 
+	font-family:sans-serif; 
+	color: #CC0000; 
+	background-color: #FFFFCC;
+	cursor:pointer; }
+.calendarDay {width:12px;font-family:sans-serif; font-weight: bolder; color: #CC0000; background-color: #FFFFCC; }
+.calendarEvent { font-weight: bolder;background-color: #FFFF00;}
+.calendar {background-color: #FFFFFF; font-family: sans-serif; font-size:x-small;}
+
+#calendarMonth{
+	color: #CC0033;
+	font-weight: bolder;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:100%;}
+#calendarDates{
+	font-weight: normal;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:80%;}
+#calendarEventName{
+	font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:80%;}
+#calendarDescription{
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:80%;}
+#calendarLocation{
+	font-weight: normal;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:80%;}
+
+.floatleft200{
+	clear: both;
+	width: 205px;
+	float: left;
+	padding: 0px 5px 5px 0px;
+}
+
+.floatleft2002{
+	width: 205px;
+	float: left;
+	padding: 0px 5px 5px 0px;
+}
+
+.floatright200{
+	width: 200px;
+	float: right;
+	padding: 0px 0px 5px 5px;
+}
+
+.bigcapwhite{
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #FFFFFF;
+	font-size: 200%;
+	font-weight:bold;
+}
+
+/* new css classes defined sept 2006 */
+
+.h3para	{font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #CC0033; font-weight: bold; 
+padding: 0px 0px 0px 0px; margin-bottom: 5px; margin-top: 0;}
+.h3para	a:link {color: #CC0033; text-decoration: none}
+.h3para a:visited {color: #DD0000; text-decoration: none} 
+.h3para a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.h3para a:active {color: #DD0000; text-decoration: none}
+
+.h4para	{font-family: Arial, Helvetica, sans-serif; font-size: 80%; color: #CC0033; font-weight: bold;
+padding: 0px 0px 0px 0px; margin-bottom: 5px; margin-top: 0px;}
+.h4para	a:link {color: #CC0033; text-decoration: none} 
+.h4para a:visited {color: #DD0000; text-decoration: none}
+.h4para a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.h4para a:active {color: #DD0000; text-decoration: none}
+
+.textpara {font-family: Arial, Helvetica, sans-serif; font-size: 70%; color: #000000;
+padding: 0px 0px 0px 0px; margin-bottom: 5px; margin-top: 0;} 
+.textpara a:link {color: #CC0033; text-decoration: none} 
+.textpara a:visited {color: #DD0000; text-decoration: none} 
+.textpara a:hover {color: #CC0033; text-decoration: underline; background-color: #FEEDEF} 
+.textpara a:active {color: #DD0000; text-decoration: none} 
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#container {
+    text-align: left;
+}
+/*
+a, figure {
+    display: inline-block;
+}*/
+figcaption {
+    margin: 10px 0 0 0;
+    text-align: center;
+    /*font-variant: small-caps;*/
+    /*font-family: Arial;*/
+    /*font-weight: bold;*/
+    /* color: #bb3333; */
+}
+/*
+figure {
+    padding: 5px;
+}
+img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+img {
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+}*/
