@@ -1,27 +1,24 @@
-MUHAMMAD ASIM JAMSHED				   Last Updated: 12/08/2016
+MUHAMMAD ASIM JAMSHED
 ---------------------------------------------------------------------------
 CONTACT INFORMATION
 
 820 N1 ITC Building, EE Dept.
-Korea Advanced Institute of Science & Technology
-291 Daehangno, Daejeon 34141
+School of Electrical Engineering
+Korea Advanced Institute of Science & Technology (KAIST)
+291 Daehangno, Yuseong-gu, Daejeon 34141
 Republic of Korea
 
 Voice: +82 (42) 350 7512
-E-mail: ajamshed@ndsl.kaist.edu
+E-mail: ajamshed@kaist.ac.kr
 WWW: www.ndsl.kaist.edu/~ajamshed/
-E-mail is the preferred means of contact
----------------------------------------------------------------------------
-RESEARCH INTERESTS
-
-Highly scalable networked server and security systems design & implementation
-Distributed systems, network security and operating systems
 ---------------------------------------------------------------------------
 EDUCATION
 
 Korea Advanced Institute of Science & Technology (KAIST)
 Daejeon, Republic of Korea
-PhD Student, Electrical Engineering (Sept 2010-onwards)
+PhD, Electrical Engineering (Expected: Feb 2017)
+- Thesis title: Networking Stack Abstraction for High-performance
+  	 	Flow-processing Middleboxes
 - Advisor: KyoungSoo Park
 
 University of Pittsburgh, Pittsburgh, Pennsylvania, USA
@@ -32,252 +29,146 @@ Lahore University of Management Sciences, Lahore, Pakistan
 BSc (Hons), Computer Science, (May 2005)
 - Minor in Mathematics
 ---------------------------------------------------------------------------
-RESEARCH EXPERIENCE
+RESEARCH INTERESTS
 
-Networked & Distributed Computing Systems Lab		    Fall 10-onwards
-Graduate Researcher, EE Dept., KAIST
-(i) Smart resource management in heterogeneous systems: 
-See [4] in Projects section for details.
+Networked systems, distributed systems, network security & operating systems.
+---------------------------------------------------------------------------
+EMPLOYMENT EXPERIENCE
 
-(ii) High performance networked systems: 
-See [1, 3] in Projects section for details.
-
-(iii) Highly scalable intrusion detection systems: 
-See [4] in Projects section for details.
-
-(iv) Human (& spam) detection in the Internet: 
-See [5] in Projects section for details.
-
-
-International Computer Science Institute(ICSI),Berkeley  Summer 14&Fall 15
+International Computer Science Institute(ICSI),Berkeley  Summer 14 & Fall 15
 Research Intern, Bro team
 (i) Developed a packet acquisition & filter framework for 10 Gbps network 
 applications.
 
-
-Distributed Systems Lab				        Summer 09-Spring 10
-Graduate Researcher, CS Dept., Univ of Pittsburgh
-(i) Email spam detection: Analyzed spamming behaviors using honeypots in 
-open-proxy settings.
-
-(ii) Human detection in the Internet: 
-See [5] in Projects section for details.
-
-
-Network Systems Lab					    Summers 07 & 08
-Graduate Researcher, CS Dept., Univ of Pittsburgh
-Defense against application-level DDoS attacks: 
-See [6] in Projects section for details.
----------------------------------------------------------------------------
-REFEREED PUBLICATIONS
-
-[1] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
-Networking Stack for Flow Monitoring Middleboxes." 14th USENIX Symposium 
-on Networked Systems Design and Implementation (NSDI 2017)
-
-[2] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
-GPU as Packet Processing Accelerator." 14th USENIX Symposium on Networked
-Systems Design and Implementation (NSDI 2017)
-
-[3] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
-String Pattern Matching for Network Applications." 13th USENIX Symposium 
-on Networked Systems Design and Implementation (NSDI 2016)
-
-[4] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Haetae: Scaling 
-the Performance of Network Intrusion Detection with Many-core Processors."
-18th International Symposium on Research in Attacks, Intrusions and Defenses
-(RAID 2015)
-
-[5] Jamshed, M., Kim, D., Moon, Y., Han, D., Park, K. "A Case for a 
-Stateful Middlebox Networking Stack." SIGCOMM Computer Communication
-Review, Rev. 45, Pg 355-356, August, 2015
-
-[6] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Scaling the 
-Performance of Network Intrusion Detection with Many-core Processors." 11th
-ACM/IEEE Symposium on Architectures for Networking and Communication 
-Systems (ANCS 2015) (Poster)
-
-[7] Jeong, E., Woo, S., Jamshed, M., Jeong, H., Ihm, S., Han, D., Park, K. 
-"mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems." 11th 
-USENIX Symposium on Networked Systems Design and Implementation 
-(NSDI 2014) - NSDI Community Award
-
-[8] Jamshed, M., Lee, J., Moon, S., Yun, I., Kim, D., Lee, S., Yi, Y., 
-Park, K. "Kargus: a Highly-scalable Software-based Intrusion Detection 
-System." 19th ACM Conference on Computer and Communications Security 
-(CCS 2012)
-
-[9] Jamshed, M., Go, Y., Park, K. "Suppressing Malicious Bot Traffic using 
-an Accurate Human Attester." 8th USENIX Symposium on Networked Systems 
-Design and Implementation (NSDI 2011) (Poster)
-
-[10] Jamshed, M., Kim, W., Park, K. "Suppressing Bot Traffic with Accurate 
-Human Attestations." 1st ACM Asia-Pacific Workshop on Systems (ApSys 2010) 
-held in conjunction with SIGCOMM 2010
-
-[11] Djalaliev, P., Jamshed, M., Farnan, N., Brustoloni, J.C. "Sentinel: 
-Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks." 17th IEEE 
-International Conference on Computer Communications and Networks 
-(ICCCN 2008) Network Security Track.
-
-[12] Jamshed, M., Brustoloni, J. "In-Network Server-Directed Client 
-Authentication and Packet Classification." 35th Annual IEEE Conference on 
-Local Computer Networks (LCN) 2010
----------------------------------------------------------------------------
-NON-REFEREED PUBLICATIONS
-
-[1] Jamshed, M., Nam, J., Choi, B., Han, D., Park, K. "Balancing between 
-Power Efficiency and High Performance on Software-based Intrusion Detection
-Systems." 21st Network and Distributed System Security Symposium
-(NDSS 2014) (Poster)
-
-[2] Jamshed, M., Go, Y., Park, K. "HumanSign: Accurate Bot Message 
-Detection with Reliable Human Attestation." Technical Report, 
-EE Department, KAIST, 2012
----------------------------------------------------------------------------
-INVITED TALKS
-
-[1] "Kargus: a Batched, Parallelizable GPU-Enabled Intrusion Detection 
-System." 2012 International Exposition Yeosu Korea organized by Korea 
-Information Processing Society, April 28, 2012.
----------------------------------------------------------------------------
-PROJECTS/SOFTWARE
-
-1. mOS STACK (https://github.com/ndsl-kaist/mOS-networking-stack) May 2016-
-mOS networking stack provides elegant abstractions for stateful
-flow processing tailored for middlebox applications. Our API allows
-developers to focus on the core application logic instead of dealing
-with low-level packet/flow processing themselves. Under the hood, the
-stack implements an efficient event system derived from mTCP, a
-high-performance user-level TCP/IP stack. Our evaluation demonstrates
-that the mOS API enables modular develop- ment of stateful middleboxes,
-often significantly reducing development efforts represented by the
-source lines of code, while introducing little performance overhead.
-<Pub: CCR 2015, URL: http://mos.kaist.edu/>
-
-2. PACKET BRICKS (https://github.com/bro/packet-bricks)		 Sept 2014-
-A netmap-based packet layer for distributing and filtering traffic.
-
-3. mTCP	(https://github.com/eunyoung14/mtcp/)			 Sept 2013-
-Scaling the performance of short TCP connections on multi-core systems is 
-fundamentally challenging. Although many proposals have attempted to 
-address various shortcomings, inefficiency in the kernel implementation 
-still persists. For example, even the state-of-the-art design spends 70% 
-to 80% of CPU cycles in handling TCP connections in the kernel, leaving
-only small room for innovation in the user-level program. mTCP is a 
-high-performance user-level TCP stack for multi-core systems that 
-addresses the inefficiency from the ground up from packet I/O and TCP 
-connection management to the application interface. In addition
-to adopting well-known techniques, mTCP (1) allows efficient flow-level 
-event aggregation, and (2) performs batch processing of RX/TX packets for 
-high I/O efficiency. mTCP improves the performance of small message 
-transactions by a factor 25 and 3 than that of latest Linux TCP stack and 
-the best-performing prototype we know. It also improves the
-performance of various popular applications by 33% to 320% compared with 
-those on the Linux stack. mTCP won the NSDI Community Award 2014 and was 
-declared runnerup in the Samsung HumanTech Paper Award 2014. 
-<Pub: NSDI 2014, URL: http://shader.kaist.edu/mtcp/>
-
-4. KARGUS							  Oct 2012
-Intrusion attempts on the Internet have consistently risen in the last few
-years. As the link bandwidths of large campus and metropolitan area 
-networks reach 10 Gbps, network administrators have employed 
-high-performance intrusion detection systems (IDSes) that use dedicated 
-network processors and specialized memory to cope with the increasing 
-ingress traffic rates. Unfortunately, the deployment and maintenance costs 
-of such solutions are inevitably high, and the hardware design is often 
-too inflexible to adopt new analysis algorithms. Kargus is a 
-highly-scalable software-based IDS that runs on commodity PCs and its
-performance is comparable to hardware-based IDSes. It effectively exploits 
-the potentials of modern hardware innovations such as multi-core CPUs, 
-heterogeneous GPUs and multiqueue interface of NICs that drives its 
-monitoring rate by up to 33 Gbps in real time. Kargus was mentioned in 
-the "10 Achievements of 2012 that put KAIST on the Spotlight."
-<Pub: CCS 2012, URL: http://shader.kaist.edu/kargus/>
-
-5. HUMANSIGN							 Sept 2010
-A device framework under development in which input keystroke events are 
-securely coupled with actual textual content typed by humans for reliable 
-network payload delivery. This scheme is based on trusted computing 
-principles that places the root of trust on a customized input device 
-running a trusted platform module (TPM) chip and a small attester daemon
-within it. Each input event generates a cryptographic hash that attests to 
-human activity and the combined message attestation (derived from such 
-events) gets a third-party verifiable digital signature. These human 
-attestations are then attached to the actual messages which ultimately 
-assist in reducing false positive rates in the recipients' filter modules.
-<Pub: APSYS 2010>
-
-6. BOTBUSTER							  Dec 2008
-DDoS attacks increasingly use normal-looking application-layer requests to 
-waste HTTP server CPU or disk resources. CAPTCHAs attempt to distinguish 
-bots from human clients and are often used to avoid such attacks. However, 
-CAPTCHAs themselves consume resources and frequently are defeated. I 
-developed Bobuster, an extensible ebtables module that pushes client 
-authentication in the kernel while overcoming several limitations in 
-KillBots (NSDI '05). It can easily be deployed as a bridge in front of 
-server farms, modularly accepts a variety of present and future 
-authentication schemes, and can do server-directed client authentication 
-and packet classification. <Pubs: ICCCN 2008, LCN 2010>
----------------------------------------------------------------------------
-EMPLOYMENT EXPERIENCE
-
-International Computer Science Institute, Berkeley, CA  May 2014-Aug 2014
-- Research Intern, Bro security monitoring team: Developed Packet Bricks. 
-See [2] in Projects section.
-
 Palmchip Corporation, Lahore, Pakistan		        May 2005-July 2006
 - Software Engineer, Embedded Systems Group: Optimized bootloader & 
-filesystem performances for an in-house System-on-Chip Network-Attached 
-Storage device series.
+filesystem performances for an in-house system-on-chip network-attached 
+storage device series.
 
 Syed Murad Ali, Toronto, Canada			  	       Summer 2004
 - Intern, Web Development (PHP & HTML)
 ---------------------------------------------------------------------------
-TEACHING EXPERIENCE
+PROJECTS/SOFTWARE
 
-Korea Advanced Institute of Science & Technology (KAIST)
-Teaching Assistant, EE Dept.
-Led weekly precepts and graded assignments for the following courses:
-- EE 209: Programming Structures for Electrical Engineering
-						  Falls {2010, 2011 & 2012}
+1. mOS STACK							  May 2016-
+The mOS networking stack provides elegant abstractions for stateful flow
+processing tailored for middlebox applications. Our API allows developers
+to focus on the core application logic while it relieves the burden of
+dealing with low-level packet/flow processing themselves. Under the hood,
+the stack implements an efficient event system derived from mTCP, a high
+performance user-level TCP/IP stack. We plan to move the project to
+DPDK.org for broader impact. Discussion is on-going with Intel folks.
+- Role: Lead author & maintainer
+- Project homepage: http://mos.kaist.edu/
+- Source code: https://github.com/ndsl-kaist/mOS-networking-stack
+- Related publication: Refer to our mOS paper at NSDI 2017
 
-University of Pittsburgh
-Teaching Assistant, CS Dept.
-My main responsibilities have ranged from leading weekly recitations and 
-grading assignments to making labs for the following courses:
-- CS 0449: Introduction to Systems Software	      Springs {2009 & 2008}
-- CS 0007: Introduction to Computer Programming	  Falls {2008, 2007 & 2006}
-Course Grader, CS Dept.
-- CS 1550: Introduction to Operating Systems	 	        Spring 2008
+2. PACKET BRICKS       	     	    	      	 		 Sept 2014-
+A netmap-based packet layer for distributing and filtering traffic.
+- Role: Lead author & maintainer
+- Source code: https://github.com/bro/packet-bricks
 
-Lahore University of Management Sciences
-Teaching Assistant, CS Dept.
-Led weekly labs/tutorials and graded programming assignments
-- CS 292: Advanced Programming Techniques		     Winter 2004-05
-Lab Instructor, CS Dept.
-Designed labs in OPNET simulator
+3. mTCP	(https://github.com/eunyoung14/mtcp/)			 Sept 2013-
+mTCP is a high-performance user-level TCP stack for multi-core systems
+that addresses the inefficiency from the ground up - from packet I/O and
+TCP connection management to the application interface. mTCP (1) allows
+efficient flow-level event aggregation, and (2) performs batch processing
+of RX/TX packets for high I/O efficiency. mTCP improves the performance
+of small message transactions by a factor 25 and 3 than that of the latest
+Linux TCP stack and the best-known research prototype. It also improves
+the performance of various popular applications by 33% to 320% compared
+with those on the Linux stack. mTCP won the NSDI Community Award 2014
+and was declared runner-up in the Samsung HumanTech Paper Award 2014.
+We plan to move the project to DPDK.org for broader impact. Discussion
+is on-going with Intel folks.
+- Role: Co-author & co-lead maintainer
+- Project homepage: http://shader.kaist.edu/mtcp/
+- Source code: https://github.com/eunyoung14/mtcp/
+- Related publication: Refer to our mTCP paper at NSDI 2014
 
-- CS 471: Computer Networks				     Spring 2004-05
+4. KARGUS							  Oct 2012
+Kargus is a highly-scalable software-based network intrusion detection
+system (NIDS) that runs on commodity PCs and its performance is comparable
+to hardware-based NIDSes. It effectively exploits the potentials of modern
+hardware innovations such as multi-core CPUs, heterogeneous GPUs and
+multi-queue interface of NICs that drives its monitoring rate by up to 33
+Gbps in real time. Kargus was mentioned in the “10 Achievements of 2012
+that put KAIST on the Spotlight.”
+- Role: Lead author
+- Project homepage: http://shader.kaist.edu/kargus/
+- Related publication: Refer to our Kargus paper at CCS 2012
+
+5. HUMANSIGN							 Sept 2010
+An input device framework in which keystroke events are securely coupled
+with text-based content that is typed by humans with the end goal of
+reliable network payload delivery. This scheme is based on trusted
+computing principles that places the root of trust on a customized input
+device running a trusted platform module (TPM) chip and a small attester
+daemon within it. Each input event generates a cryptographic hash that
+attests to human activity and the combined message attestation (derived
+from such events) gets a third-party verifiable digital signature. These
+human attestations are then attached to the actual messages which
+ultimately assist in reducing false positive rates in the recipients’
+filter modules.
+- Role: Lead author
+- Related publication: Refer to our HumanSign paper at APSYS 2010
 ---------------------------------------------------------------------------
-RELEVANT COURSEWORK
+SELECTED PUBLICATIONS
 
-Computer Operating Systems*, Computer Architecture*, Design & Analysis of 
-Algorithms*, Wide Area Networks, Computer & Network Security, Principles 
-of Database Systems, Foundations of Artificial Intelligence*, Advanced 
-Topics in Operating Systems, Secure Software Systems, Advanced Topics in 
-Computer Networks, Network Security, Think Like an Adversary, Performance 
-Analysis of Communication Networks, Parallel and Distributed Computation in
-Communication Network, Software-defined Networked Computing
+[1] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
+Networking Stack for Flow Monitoring Middleboxes." To appear in the 14th
+USENIX Symposium on Networked Systems Design and Implementation (NSDI 2017)
 
-* passed preliminary PhD qualifier for the course
+[2] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
+GPU as Packet Processing Accelerator." To appear in 14th USENIX Symposium
+on Networked Systems Design and Implementation (NSDI 2017)
+
+[3] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
+String Pattern Matching for Network Applications." in 13th USENIX Symposium 
+on Networked Systems Design and Implementation (NSDI 2016)
+
+[4] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Haetae: Scaling 
+the Performance of Network Intrusion Detection with Many-core Processors."
+in 18th International Symposium on Research in Attacks, Intrusions and
+Defenses (RAID 2015)
+
+[5] Jamshed, M., Kim, D., Moon, Y., Han, D., Park, K. "A Case for a 
+Stateful Middlebox Networking Stack." in SIGCOMM Computer Communication
+Review, Rev. 45, Pg 355-356, August, 2015
+
+[6] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Scaling the 
+Performance of Network Intrusion Detection with Many-core Processors." in
+11th ACM/IEEE Symposium on Architectures for Networking and Communication 
+Systems (ANCS 2015) (Poster)
+
+[7] Jeong, E., Woo, S., Jamshed, M., Jeong, H., Ihm, S., Han, D., Park, K. 
+"mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems." in
+11th USENIX Symposium on Networked Systems Design and Implementation 
+(NSDI 2014) - NSDI Community Award
+
+[8] Jamshed, M., Lee, J., Moon, S., Yun, I., Kim, D., Lee, S., Yi, Y., 
+Park, K. "Kargus: a Highly-scalable Software-based Intrusion Detection 
+System." in 19th ACM Conference on Computer and Communications Security 
+(CCS 2012)
+
+[9] Jamshed, M., Go, Y., Park, K. "Suppressing Malicious Bot Traffic using 
+an Accurate Human Attester." in 8th USENIX Symposium on Networked Systems 
+Design and Implementation (NSDI 2011) (Poster)
+
+[10] Jamshed, M., Kim, W., Park, K. "Suppressing Bot Traffic with Accurate 
+Human Attestations." in 1st ACM Asia-Pacific Workshop on Systems (ApSys 2010) 
+held in conjunction with SIGCOMM 2010
+
+[11] Djalaliev, P., Jamshed, M., Farnan, N., Brustoloni, J.C. "Sentinel: 
+Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks." in 17th IEEE 
+International Conference on Computer Communications and Networks 
+(ICCCN 2008) Network Security Track.
+
+[12] Jamshed, M., Brustoloni, J. "In-Network Server-Directed Client 
+Authentication and Packet Classification." in 35th Annual IEEE Conference
+on Local Computer Networks (LCN) 2010
 ---------------------------------------------------------------------------
 PROFESSIONAL SERVICE
-
-External Reviewer: OSDI 2016, SIGCOMM 2016, SIGCOMM 2015, SIGMETRICS 2015,
-NSDI 2015, SIGCOMM 2014, ATC 2014, NSDI 2014, RTCSA 2014, CCS 2013,
-APSYS 2013, ASIACCS 2013, OAKLAND 2013, WWW 2013, CODASPY 2013, CCSW 2012,
-NSDI 2011, NDSS 2011, CoNEXT 2011
 
 Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
 Review
@@ -299,34 +190,5 @@ HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, LATEX
 ---------------------------------------------------------------------------
 REFERENCES
 
-KYOUNGSOO PARK
-Associate Professor
-Department of Electrical Engineering
-KAIST, 34141
-Republic of Korea
-Phone: +82 (42) 350 7412
-Email: kyoungsoo@ee.kaist.ac.kr
-
-YUNG YI
-Associate Professor
-Department of Electrical Engineering &
-Department of Computer Science
-KAIST, 34141
-Republic of Korea
-Phone: +82 (42) 350 3486
-Email: yiyung@kaist.edu
-
-DONGSU HAN
-Assistant Professor
-Department of Electrical Engineering
-KAIST, 34141
-Republic of Korea
-Email: dongsuh@ee.kaist.ac.kr
-
-ROBIN SOMMER
-Senior Researcher
-International Computer Science Institute
-Berkeley, CA 94704
-USA
-Email: robin@icir.org
+Available on request
 ---------------------------------------------------------------------------
