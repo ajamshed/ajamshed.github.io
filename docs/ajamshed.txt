@@ -1,4 +1,4 @@
-MUHAMMAD ASIM JAMSHED
+MUHAMMAD ASIM JAMSHED, Ph.D.
 ---------------------------------------------------------------------------
 CONTACT INFORMATION
 
@@ -10,13 +10,13 @@ Republic of Korea
 
 Voice: +82 (42) 350 7512
 E-mail: ajamshed@kaist.ac.kr
-WWW: www.ndsl.kaist.edu/~ajamshed/
+WWW: https://ajamshed.github.io/
 ---------------------------------------------------------------------------
 EDUCATION
 
 Korea Advanced Institute of Science & Technology (KAIST)
 Daejeon, Republic of Korea
-PhD, Electrical Engineering (Expected: Feb 2017)
+PhD, Electrical Engineering (Feb 2017)
 - Thesis title: Networking Stack Abstraction for High-performance
   	 	Flow-processing Middleboxes
 - Advisor: KyoungSoo Park
@@ -35,10 +35,12 @@ Networked systems, distributed systems, network security & operating systems.
 ---------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
+Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-onwards
+- Postdoctoral Researcher
+
 International Computer Science Institute(ICSI),Berkeley  Summer 14 & Fall 15
-Research Intern, Bro team
-(i) Developed a packet acquisition & filter framework for 10 Gbps network 
-applications.
+- Research Intern, Bro team: Developed a packet acquisition & filter
+framework for 10 Gbps network applications.
 
 Palmchip Corporation, Lahore, Pakistan		        May 2005-July 2006
 - Software Engineer, Embedded Systems Group: Optimized bootloader & 
@@ -56,8 +58,9 @@ processing tailored for middlebox applications. Our API allows developers
 to focus on the core application logic while it relieves the burden of
 dealing with low-level packet/flow processing themselves. Under the hood,
 the stack implements an efficient event system derived from mTCP, a high
-performance user-level TCP/IP stack. We plan to move the project to
-DPDK.org for broader impact. Discussion is on-going with Intel folks.
+performance user-level TCP/IP stack. mOS won the NSDI Best Paper Award 2017.
+We plan to move the project to DPDK.org for broader impact. Discussion is
+on-going with Intel folks.
 - Role: Lead author & maintainer
 - Project homepage: http://mos.kaist.edu/
 - Source code: https://github.com/ndsl-kaist/mOS-networking-stack
@@ -116,11 +119,12 @@ filter modules.
 SELECTED PUBLICATIONS
 
 [1] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
-Networking Stack for Flow Monitoring Middleboxes." To appear in the 14th
+Networking Stack for Flow Monitoring Middleboxes." in 14th
 USENIX Symposium on Networked Systems Design and Implementation (NSDI 2017)
+- NSDI Best Paper Award
 
 [2] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
-GPU as Packet Processing Accelerator." To appear in 14th USENIX Symposium
+GPU as Packet Processing Accelerator." in 14th USENIX Symposium
 on Networked Systems Design and Implementation (NSDI 2017)
 
 [3] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
@@ -175,6 +179,7 @@ Review
 ---------------------------------------------------------------------------
 HONORS
 
+NSDI Best Paper Award 2017 for mOS
 2nd Runner-up Samsung Humantech Paper Award 2016 for DFC
 NSDI Community Award 2014 for mTCP
 Runner-up Samsung Humantech Paper Award 2014 for mTCP
