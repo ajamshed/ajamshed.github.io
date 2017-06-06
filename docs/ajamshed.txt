@@ -2,14 +2,12 @@ MUHAMMAD ASIM JAMSHED, Ph.D.
 ---------------------------------------------------------------------------
 CONTACT INFORMATION
 
-820 N1 ITC Building, EE Dept.
-School of Electrical Engineering
-Korea Advanced Institute of Science & Technology (KAIST)
-291 Daehangno, Yuseong-gu, Daejeon 34141
-Republic of Korea
+Intel Jones Farm 2 (JF2) Building
+2111 NE 25th Ave, Hillsboro, OR 97124
+U.S.A.
 
-Voice: +82 (42) 350 7512
-E-mail: ajamshed@kaist.ac.kr
+Voice: +1 (971) 330 6282
+E-mail: asim.jamshed@gmail.com
 WWW: https://ajamshed.github.io/
 ---------------------------------------------------------------------------
 EDUCATION
@@ -35,7 +33,9 @@ Networked systems, distributed systems, network security & operating systems.
 ---------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
-Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-onwards
+Intel Labs, Infrastructure Research Group		 May 2017-onwards
+
+Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-Apr 2017
 - Postdoctoral Researcher
 
 International Computer Science Institute(ICSI),Berkeley  Summer 14 & Fall 15
