@@ -34,6 +34,7 @@ Networked systems, distributed systems, network security & operating systems.
 EMPLOYMENT EXPERIENCE
 
 Intel Labs, Infrastructure Research Group		 May 2017-onwards
+- Research Scientist
 
 Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-Apr 2017
 - Postdoctoral Researcher
