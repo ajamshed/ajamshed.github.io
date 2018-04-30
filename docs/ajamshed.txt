@@ -72,7 +72,7 @@ A netmap-based packet layer for distributing and filtering traffic.
 - Role: Lead author & maintainer
 - Source code: https://github.com/bro/packet-bricks
 
-3. mTCP	(https://github.com/eunyoung14/mtcp/)			 Sept 2013-
+3. mTCP								 Sept 2013-
 mTCP is a high-performance user-level TCP stack for multi-core systems
 that addresses the inefficiency from the ground up - from packet I/O and
 TCP connection management to the application interface. mTCP (1) allows
@@ -174,7 +174,7 @@ Authentication and Packet Classification." in 35th Annual IEEE Conference
 on Local Computer Networks (LCN) 2010
 ---------------------------------------------------------------------------
 PROFESSIONAL SERVICE
-
+Program Committee Member: CAN 2017
 Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
 Review
 ---------------------------------------------------------------------------
