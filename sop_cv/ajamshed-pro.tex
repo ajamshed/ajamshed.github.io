@@ -1,0 +1,508 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %% 
+%% LaTeX to get the ``??'' replaced with the number of the last page  %% 
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=0.75in,            % 0.75 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+%                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+%\definecolor{mulberry}{rgb}{0.77,0.29,0.55}
+\definecolor{mulberry}{rgb}{0.02,0.30,0.53}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=mulberry,urlcolor=mulberry,
+            anchorcolor=mulberry,citecolor=mulberry}
+%\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+%\hypersetup{colorlinks,breaklinks,
+%            linkcolor=darkblue,urlcolor=darkblue,
+%            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+%
+% Usage: \makeheading{name}
+%
+% Place at top of document. It should be the first thing.
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+%
+% Follow this section IMMEDIATELY with the first line of the section
+% text. Do not put whitespace in between. That is, do this:
+%
+%       \section{My Information}
+%       Here is my information.
+%
+% and NOT this:
+%
+%       \section{My Information}
+%
+%       Here is my information.
+%
+% Otherwise the top of the section header will not line up with the top
+% of the section. Of course, using a single comment character (%) on
+% empty lines allows for the function of the first example with the
+% readability of the second example.
+\renewcommand{\section}[2]%
+        {\pagebreak[2]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section 
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\newlength{\rcollength}\setlength{\rcollength}{2.60in}%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+\makeheading{M{\footnotesize UHAMMAD} A{\footnotesize SIM} J{\footnotesize AMSHED}, Ph.D.} & \hspace{0.75in}{\it }
+\end{tabular}
+
+\section{Contact Information}
+%
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table 
+%       (adjust it to your liking; default is 1.85in).
+%
+%\newlength{\rcollength}\setlength{\rcollength}{2.60in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+Intel Jones Farm 2 (JF2) Building, & \textit{Voice:} +1 (971) 330 6282 \\
+2111 NE 25th Ave, Hillsboro, OR 97124    & \textit{E-mail:}
+\href{mailto:asim.jamshed@gmail.com}{\small{\texttt{asim.jamshed@gmail.com}}}\\
+United States of America & \textit{WWW:}
+\href{https://ajamshed.github.io/}{\small{\texttt{ajamshed.github.io}}}
+\end{tabular}
+
+\section{Education}
+%
+{\textbf{Korea Advanced Institute of Science \& Technology (KAIST)}},
+Republic of Korea
+\begin{outerlist}
+
+\item[] Ph.D., 
+        {Electrical Engineering} 
+        (Feb 2017) 
+        \begin{innerlist}
+	   \item Thesis title: {\small Networking Stack Abstraction for High-performance
+Flow-processing Middleboxes}
+        \item Advisor: 
+              {KyoungSoo Park} \\
+        \end{innerlist}
+\end{outerlist}
+
+{\textbf{University of Pittsburgh}},
+Pittsburgh, Pennsylvania, USA
+\begin{outerlist}
+
+\item[] M.S., 
+        {Computer Science} 
+        (Apr 2010)
+        \begin{innerlist}
+        \item Advisors: 
+              {KyoungSoo Park} \& Daniel Moss\'e\\
+        \end{innerlist}
+\end{outerlist}
+
+{\textbf{Lahore University of Management Sciences}},
+Lahore, Pakistan
+\begin{outerlist}
+\item[] BSc (Hons), 
+        {Computer Science} (May 2005)
+        \begin{innerlist}
+        \item Minor in Mathematics 
+        \end{innerlist}
+\end{outerlist}
+
+\section{Research Interest}
+%
+Networked systems, distributed systems, network security and operating systems.
+
+
+\section{Employment Experience}
+%
+%%\section{Research Experience}
+%\textbf{Networked \& Distributed Computing Systems Lab}  
+%				\hfill \textbf{Fall '10-onwards} \\
+%\textit{Graduate Researcher, {\small EE Dept., KAIST} \\
+%(i) Smart resource management in heterogeneous systems: See [4] in Projects section for details. \\
+%(ii) High performance networked systems: See [1, 3] in Projects section for details. \\
+%(iii) Highly scalable intrusion detection systems: See [4] in Projects section for details. \\
+%(iv) Human (\& spam) detection in the Internet: See [5] in Projects section for details.} \\
+%
+\textbf{Intel Labs, Infrastructure Research Group} \hfill \textbf{May2017-onwards}
+\begin{innerlist}
+\item {Research Scientist} \\
+\end{innerlist}
+
+\textbf{Korea Advanced Institute of Science \& Technology (KAIST)}  
+				\hfill \textbf{Feb 2017-Apr 2017}
+\begin{innerlist}
+\item {Postdoctoral Researcher} \\
+\end{innerlist}
+
+\textbf{International Computer Science Institute, Berkeley, CA, US}  
+				\hfill \textbf{Summer '14 $\&$ Fall '15}
+\begin{innerlist}
+\item {Research Intern, Bro team: Developed a packet acquisition
+\& filter framework for 10 Gbps network applications.} \\
+\end{innerlist}
+
+{\textbf{Palmchip Corporation}}, 
+Lahore, Pakistan%
+			\hfill {\bf May 2005-July 2006}
+\begin{innerlist}
+\item {Software Engineer, Embedded Systems Group: Optimized bootloader \& filesystem
+performances for an in-house system-on-chip network-attached storage device series.} \\
+\end{innerlist}
+
+{\textbf{Syed Murad Ali}, Toronto, Canada}%
+			\hfill {\bf Summer 2004}
+\begin{innerlist}
+\item {Intern, Web development (PHP \& HTML).}
+\end{innerlist}
+
+\section{Projects/ Software}
+{\textbf{1. m{OS} S{\footnotesize TACK}}} \hfill {May 2016-}
+\begin{outerlist}
+\item[] {The mOS networking stack provides elegant abstractions for stateful flow processing tailored for middlebox applications. Our API allows developers to focus on the core application logic while it relieves the burden of dealing with low-level packet/flow processing themselves. Under the hood, the stack implements an efficient event system derived from mTCP, a high-performance user-level TCP/IP stack. mOS won the {\bf NSDI Best Paper Award 2017}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
+{\bf Role:} Lead author \& maintainer \\
+{\bf Project homepage:} \href{http://mos.kaist.edu/}{\texttt{http://mos.kaist.edu/}} \\
+{\bf Source code:} \href{https://github.com/ndsl-kaist/mOS-networking-stack}{\texttt{https://github.com/ndsl-kaist/mOS-networking-stack}} \\
+{\bf Related publication:} Refer to our mOS paper at NSDI 2017
+\end{outerlist} 
+\ \\
+{\textbf{2. P{\footnotesize ACKET} B{\footnotesize RICKS}}}
+        \hfill {Sept 2014-}
+\begin{outerlist}
+\item[] {A netmap-based packet layer for distributing and filtering traffic}\\
+{\bf Role:} Lead author \& maintainer \\
+{\bf Source code:} \href{https://github.com/bro/packet-bricks}{\texttt{https://github.com/bro/packet-bricks}} \\
+\end{outerlist} 
+\ \\
+{\textbf{3. m{TCP}}}  \hfill {Sept 2013-}
+\begin{outerlist}
+\item[] {mTCP is a high-performance user-level TCP stack for multi-core systems that addresses the inefficiency from the ground up - from packet I/O and TCP connection management to the application interface. mTCP (1) allows efficient flow-level event aggregation, and (2) performs batch processing of RX/TX packets for high I/O efficiency. mTCP improves the performance of small message transactions by a factor 25 and 3 than that of the latest Linux TCP stack and the best-known research prototype. It also improves the performance of various popular applications by 33\% to 320\% compared with those on the Linux stack. mTCP won the {\bf NSDI Community Award 2014} and was declared runner-up in the {\bf Samsung HumanTech Paper Award 2014}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
+{\bf Role:} Co-author \& co-lead maintainer \\
+{\bf Project homepage:} \href{http://shader.kaist.edu/mtcp/}{\texttt{http://shader.kaist.edu/mtcp/}} \\
+{\bf Source code:} \href{https://github.com/eunyoung14/mtcp/}{\texttt{https://github.com/eunyoung14/mtcp/}} \\
+{\bf Related publication:} Refer to our mTCP paper at NSDI 2014
+\end{outerlist}
+\ \\
+{\textbf{4. K{\footnotesize ARGUS}}}
+        \hfill {Oct 2012}
+\begin{outerlist}
+\item[] {Kargus is a highly-scalable software-based network intrusion detection system (NIDS) that runs on commodity PCs and its performance is comparable to hardware-based NIDSes. It effectively exploits the potentials of modern hardware innovations such as multi-core CPUs, heterogeneous GPUs and multi-queue interface of NICs that drives its monitoring rate by up to 33 Gbps in real time. Kargus was mentioned in the {\bf ``10 Achievements of 2012 that put KAIST on the Spotlight.''}}\\
+{\bf Role:} Lead author \\
+{\bf Project homepage:} \href{http://shader.kaist.edu/kargus/}{\texttt{http://shader.kaist.edu/kargus/}} \\
+{\bf Related publication:} Refer to our Kargus paper at CCS 2012
+\end{outerlist}
+\ \\
+{\textbf{5. H{\footnotesize UMAN}S{\footnotesize IGN}}}
+        \hfill {Sept 2010}
+\begin{outerlist}
+\item[] {An input device framework in which keystroke events are securely coupled with text-based content that is typed by humans with the end goal of reliable network payload delivery. This scheme is based on trusted computing principles that places the root of trust on a customized input device running a trusted platform module (TPM) chip and a small attester daemon within it. Each input event generates a cryptographic hash that attests to human activity and the combined message attestation (derived from such events) gets a third-party verifiable digital signature. These human attestations are then attached to the actual messages which ultimately assist in reducing false positive rates in the recipients' filter modules. \\}
+{\bf Role:} Lead author \\
+{\bf Related publication:} Refer to our HumanSign paper at APSYS 2010
+\end{outerlist}
+\  
+
+\section{Selected Publications}
+[1] {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Donghwi Kim, Dongsu Han,
+KyoungSoo Park,
+{``mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes,'' }
+   In the $14^{th}$ USENIX Symposium on Networked Systems Design
+   and Implementation (NSDI '17), 2017.\\
+
+[2] Younghwan Go, {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Changho
+Hwang, KyoungSoo Park,
+{``APUNet: Revitalizing GPU as Packet Processing Accelerator,'' }
+   In the $14^{th}$ USENIX Symposium on Networked Systems Design
+   and Implementation (NSDI '17), 2017.\\
+
+[3] Byungkwon Choi, Jongwook Chae, {\bf Muhammad Asim Jamshed}, KyoungSoo
+Park, Dongsu Han,
+{``DFC: Accelerating String Pattern Matching for Network Applications,'' }
+   In Proceedings of the $13^{th}$ USENIX Symposium on Networked Systems
+   Design and Implementation (NSDI '16), 2016.\\
+
+[4] Jaehyun Nam, {\bf Muhammad Asim Jamshed}, Byungkwon Choi, Dongsu Han,
+KyoungSoo Park,
+{ ``Haetae: Scaling the Performance of Network Intrusion Detection with Many-core Processors," }
+    In Proceedings of the $18^{th}$ International Symposium on Research in
+    Attacks, Intrusions and Defenses (RAID '15), 2015.\\
+
+[5] {\bf Muhammad Asim Jamshed}, Donghwi Kim, YoungGyoun Moon, Dongsu Han,
+KyoungSoo Park,
+{ ``A Case for a Stateful Middlebox Networking Stack," }
+    In SIGCOMM Computer Communication Review, Rev. 45, Pg 355-356, August, 2015.\\
+
+%%[6] Nam, J., {\bf Jamshed, M.}, Choi, B., Han, D., Park, K.
+%%{ ``Scaling the Performance of Network Intrusion Detection with Many-core Processors." }
+%%    $11^{th}$ ACM/IEEE Symposium on Architectures for Networking and Communication Systems 
+%%   (ANCS 2015) (Poster)\\
+
+[6] Eunyoung Jeong, Shinae Woo, {\bf Muhammad Asim Jamshed}, Haewon Jeong,
+Sunghwan Ihm, Dongsu Han, KyoungSoo Park,
+{ ``mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems," }
+    In Proceedings of the $11^{th}$ USENIX Symposium on Networked Systems
+    Design and Implementation (NSDI '14), 2014 - {\bf NSDI Community Award}.\\
+
+[7] {\bf Muhammad Asim Jamshed}, Jihyung Lee, Sangwoo Moon, Insu Yun,
+Deokjin Kim, Sungryoul Lee, Yung Yi, KyoungSoo Park,
+{ ``Kargus: a Highly-scalable Software-based Intrusion Detection System," }
+    In Proceedings of the $19^{th}$ ACM Conference on Computer and
+    Communications Security (CCS '12), 2012. \\
+
+[8] {\bf Muhammad Asim Jamshed}, Younghwan Go, KyoungSoo Park,
+{ ``Suppressing Malicious Bot Traffic using an Accurate Human Attester," }
+     In Proceedings of the $8^{th}$ USENIX Symposium on Networked Systems
+     Design and Implementation (NSDI '11), 2011 (Poster).\\
+     
+[9] {\bf Muhammad Asim Jamshed}, Wonho Kim, KyoungSoo Park, 
+     { ``Suppressing Bot Traffic with Accurate Human Attestations," }
+     In Proceedings of the $1^{st}$ ACM Asia-Pacific Workshop on Systems
+     (ApSys '10) held in conjunction with SIGCOMM '10, 2010.\\
+
+[10] Peter Djalaliev, {\bf Muhammad Asim Jamshed}, Nicholas Farnan, Jose
+Brustoloni, 
+	{``Sentinel: Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks,''}
+	In Proceedings of the $17^{th}$ IEEE International Conference on
+	Computer Communications and Networks (ICCCN '08) Network Security Track, 2008. \\
+
+[11] {\bf Muhammad Asim Jamshed}, Jose Brustoloni,
+	{``In-Network Server-Directed Client Authentication and Packet Classification,"}
+	In Proceedings of the $35^{th}$ Annual IEEE Conference on Local 
+	Computer Networks (LCN '10), 2010.\\
+
+%\section{Non-refereed Publications}
+%[1] {\bf Jamshed, M.}, Nam, J., Choi, B., Han, D., Park, K.
+%{ ``Balancing between Power Efficiency and High Performance on Software-based 
+%  Intrusion Detection Systems." } $21^{st}$ Network and Distributed System 
+%  Security Symposium (NDSS 2014) (Poster)\\
+
+%[2] {\bf Jamshed, M.}, Go, Y., Park, K.
+%{ ``HumanSign: Accurate Bot Message Detection with Reliable Human Attestation." }
+%    Technical Report, EE Department, KAIST, 2012 \\
+
+%\section{Invited Talks}
+%[1] { ``Kargus: a Batched, Parallelizable GPU-Enabled Intrusion Detection System." }
+%    2012 International Exposition Yeosu Korea organized by Korea Information Processing Society,
+%    April 28, 2012.\\
+
+%\section{Teaching Experience}
+%{\textbf{Korea Advanced Institute of Science \& Technology (KAIST)}} \\
+%\textit{Teaching Assistant}, EE Dept. \\
+%\\
+%Led weekly precepts and graded assignments for the 
+%following courses:
+%
+%\begin{innerlist}
+%\item {EE 209: Programming Structures for Electrical Engineering}%
+%			\hfill {Falls \{2010, 2011 \& 2012\}} \\
+%\end{innerlist}
+%
+%{\textbf{University of Pittsburgh}} \\
+%\textit{Teaching Assistant}, CS Dept. \\
+%\\
+%My main responsibilities have ranged from leading weekly recitations
+%and grading assignments to making labs for the following courses:
+%
+%\begin{innerlist}
+%\item {CS 0449: Introduction to Systems Software}%
+%			\hfill {Springs \{2009 \& 2008\}}
+%\item {CS 0007: Introduction to Computer Programming}%
+%			\hfill {Falls \{2008, 2007 \& 2006\}} \\
+%\end{innerlist}
+%
+%\textit{Course Grader}, CS Dept.
+%\begin{innerlist}
+%\item {CS 1550: Introduction to Operating Systems}%
+%			\hfill {Spring 2008} \\
+%\end{innerlist}
+%{\textbf{Lahore University of Management Sciences}} \\
+%\textit{Teaching Assistant}, CS Dept. \\
+%\\
+%Led weekly labs/tutorials and graded programming assignments 
+%
+%\begin{innerlist}
+%\item {CS 292: Advanced Programming Techniques}%
+%			\hfill {Winter 2004-05}
+%\end{innerlist}
+
+%\textit{Lab Instructor}, CS Dept. \\
+%\\
+%Designed labs in OPNET simulator 
+%
+%\begin{innerlist}
+%\item {CS 471: Computer Networks}%
+%			\hfill {Spring 2004-05}
+%\end{innerlist}
+%
+%
+%%\section{Relevant Coursework, Univ of Pittsburgh (Graduate)}
+%\section{Relevant Coursework (Selected)}
+%%
+%Computer Operating Systems{$^\dagger$}, Computer Architecture{$^\dagger$}, 
+%Design $\&$ Analysis of Algorithms{$^\dagger$}, Wide Area Networks, 
+%Computer $\&$ Network Security, Principles of Database Systems, 
+%Foundations of Artificial Intelligence{$^\dagger$}, Advanced Topics in Operating 
+%Systems, Secure Software Systems, Advanced Topics in Computer Networks, 
+%Network Security, Performance Analysis of Communication Networks,
+%Software-defined Networked Computing \\
+%\textit{\footnotesize $\dagger$ passed preliminary PhD qualifier for the course}
+
+
+\section{Professional Service}
+%
+%%\textbf{External Reviewer:} CCS 2013, ASIACCS 2013, OAKLAND 2013, WWW 2013, CODASPY 2013, CCSW 2012, NSDI 2011, NDSS 2011, CoNEXT 2011 \\
+%\textbf{External Reviewer:} OSDI 2016, SIGCOMM 2016, SIGCOMM 2015, SIGMETRICS 2015, NSDI 2015, SIGCOMM 2014, ATC 2014, NSDI 2014, RTCSA 2014, CCS 2013, APSYS 2013, ASIACCS 2013, OAKLAND 2013, WWW 2013, CODASPY 2%013, CCSW 2012, NSDI 2011, NDSS 2011, CoNEXT 2011 \\
+\textbf{Program Committee Member:} CAN 2017 \\
+\textbf{Journal Reviewer:} Elsevier Computer Networks Journal, Computer Communication Review
+
+\section{Honors}
+%
+NSDI Best Paper Award 2017 for mOS \\
+2$^{nd}$ Runner-up Samsung Humantech Paper Award 2016 for DFC \\
+NSDI Community Award 2014 for mTCP \\
+Runner-up Samsung Humantech Paper Award 2014 for mTCP \\
+``10 Achievements of 2012 that put KAIST on the Spotlight'' for Kargus \\
+ACM SIGCOMM Travel Grant 2010 \\
+Graduate Fellowship Spring 2006 \\
+Undergraduate Dean's Honor List 2001-03
+
+\section{Skills}
+C/C++, Java, C$\#$, Python, CUDA, Lua, Awk, Javascript, Linux shell scripting, HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, \LaTeX \\
+
+\section{References}
+Available on request
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

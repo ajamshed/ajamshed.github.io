@@ -1,0 +1,201 @@
+MUHAMMAD ASIM JAMSHED, Ph.D.
+---------------------------------------------------------------------------
+CONTACT INFORMATION
+
+Intel Jones Farm 2 (JF2) Building
+2111 NE 25th Ave, Hillsboro, OR 97124
+U.S.A.
+
+Voice: +1 (971) 330 6282
+E-mail: asim.jamshed@gmail.com
+WWW: https://ajamshed.github.io/
+---------------------------------------------------------------------------
+EDUCATION
+
+Korea Advanced Institute of Science & Technology (KAIST)
+Daejeon, Republic of Korea
+PhD, Electrical Engineering (Feb 2017)
+- Thesis title: Networking Stack Abstraction for High-performance
+  	 	Flow-processing Middleboxes
+- Advisor: KyoungSoo Park
+
+University of Pittsburgh, Pittsburgh, Pennsylvania, USA
+MS, Computer Science (Apr 2010)
+- Advisors: KyoungSoo Park & Daniel Moss'e
+
+Lahore University of Management Sciences, Lahore, Pakistan
+BSc (Hons), Computer Science, (May 2005)
+- Minor in Mathematics
+---------------------------------------------------------------------------
+RESEARCH INTERESTS
+
+Networked systems, distributed systems, network security & operating systems.
+---------------------------------------------------------------------------
+EMPLOYMENT EXPERIENCE
+
+Intel Labs, Infrastructure Research Group		 May 2017-onwards
+- Research Scientist
+
+Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-Apr 2017
+- Postdoctoral Researcher
+
+International Computer Science Institute(ICSI),Berkeley  Summer 14 & Fall 15
+- Research Intern, Bro team: Developed a packet acquisition & filter
+framework for 10 Gbps network applications.
+
+Palmchip Corporation, Lahore, Pakistan		        May 2005-July 2006
+- Software Engineer, Embedded Systems Group: Optimized bootloader & 
+filesystem performances for an in-house system-on-chip network-attached 
+storage device series.
+
+Syed Murad Ali, Toronto, Canada			  	       Summer 2004
+- Intern, Web Development (PHP & HTML)
+---------------------------------------------------------------------------
+PROJECTS/SOFTWARE
+
+1. mOS STACK							  May 2016-
+The mOS networking stack provides elegant abstractions for stateful flow
+processing tailored for middlebox applications. Our API allows developers
+to focus on the core application logic while it relieves the burden of
+dealing with low-level packet/flow processing themselves. Under the hood,
+the stack implements an efficient event system derived from mTCP, a high
+performance user-level TCP/IP stack. mOS won the NSDI Best Paper Award 2017.
+We plan to move the project to DPDK.org for broader impact. Discussion is
+on-going with Intel folks.
+- Role: Lead author & maintainer
+- Project homepage: http://mos.kaist.edu/
+- Source code: https://github.com/ndsl-kaist/mOS-networking-stack
+- Related publication: Refer to our mOS paper at NSDI 2017
+
+2. PACKET BRICKS       	     	    	      	 		 Sept 2014-
+A netmap-based packet layer for distributing and filtering traffic.
+- Role: Lead author & maintainer
+- Source code: https://github.com/bro/packet-bricks
+
+3. mTCP								 Sept 2013-
+mTCP is a high-performance user-level TCP stack for multi-core systems
+that addresses the inefficiency from the ground up - from packet I/O and
+TCP connection management to the application interface. mTCP (1) allows
+efficient flow-level event aggregation, and (2) performs batch processing
+of RX/TX packets for high I/O efficiency. mTCP improves the performance
+of small message transactions by a factor 25 and 3 than that of the latest
+Linux TCP stack and the best-known research prototype. It also improves
+the performance of various popular applications by 33% to 320% compared
+with those on the Linux stack. mTCP won the NSDI Community Award 2014
+and was declared runner-up in the Samsung HumanTech Paper Award 2014.
+We plan to move the project to DPDK.org for broader impact. Discussion
+is on-going with Intel folks.
+- Role: Co-author & co-lead maintainer
+- Project homepage: http://shader.kaist.edu/mtcp/
+- Source code: https://github.com/eunyoung14/mtcp/
+- Related publication: Refer to our mTCP paper at NSDI 2014
+
+4. KARGUS							  Oct 2012
+Kargus is a highly-scalable software-based network intrusion detection
+system (NIDS) that runs on commodity PCs and its performance is comparable
+to hardware-based NIDSes. It effectively exploits the potentials of modern
+hardware innovations such as multi-core CPUs, heterogeneous GPUs and
+multi-queue interface of NICs that drives its monitoring rate by up to 33
+Gbps in real time. Kargus was mentioned in the “10 Achievements of 2012
+that put KAIST on the Spotlight.”
+- Role: Lead author
+- Project homepage: http://shader.kaist.edu/kargus/
+- Related publication: Refer to our Kargus paper at CCS 2012
+
+5. HUMANSIGN							 Sept 2010
+An input device framework in which keystroke events are securely coupled
+with text-based content that is typed by humans with the end goal of
+reliable network payload delivery. This scheme is based on trusted
+computing principles that places the root of trust on a customized input
+device running a trusted platform module (TPM) chip and a small attester
+daemon within it. Each input event generates a cryptographic hash that
+attests to human activity and the combined message attestation (derived
+from such events) gets a third-party verifiable digital signature. These
+human attestations are then attached to the actual messages which
+ultimately assist in reducing false positive rates in the recipients’
+filter modules.
+- Role: Lead author
+- Related publication: Refer to our HumanSign paper at APSYS 2010
+---------------------------------------------------------------------------
+SELECTED PUBLICATIONS
+
+[1] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
+Networking Stack for Flow Monitoring Middleboxes." in 14th
+USENIX Symposium on Networked Systems Design and Implementation (NSDI 2017)
+- NSDI Best Paper Award
+
+[2] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
+GPU as Packet Processing Accelerator." in 14th USENIX Symposium
+on Networked Systems Design and Implementation (NSDI 2017)
+
+[3] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
+String Pattern Matching for Network Applications." in 13th USENIX Symposium 
+on Networked Systems Design and Implementation (NSDI 2016)
+
+[4] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Haetae: Scaling 
+the Performance of Network Intrusion Detection with Many-core Processors."
+in 18th International Symposium on Research in Attacks, Intrusions and
+Defenses (RAID 2015)
+
+[5] Jamshed, M., Kim, D., Moon, Y., Han, D., Park, K. "A Case for a 
+Stateful Middlebox Networking Stack." in SIGCOMM Computer Communication
+Review, Rev. 45, Pg 355-356, August, 2015
+
+[6] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Scaling the 
+Performance of Network Intrusion Detection with Many-core Processors." in
+11th ACM/IEEE Symposium on Architectures for Networking and Communication 
+Systems (ANCS 2015) (Poster)
+
+[7] Jeong, E., Woo, S., Jamshed, M., Jeong, H., Ihm, S., Han, D., Park, K. 
+"mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems." in
+11th USENIX Symposium on Networked Systems Design and Implementation 
+(NSDI 2014) - NSDI Community Award
+
+[8] Jamshed, M., Lee, J., Moon, S., Yun, I., Kim, D., Lee, S., Yi, Y., 
+Park, K. "Kargus: a Highly-scalable Software-based Intrusion Detection 
+System." in 19th ACM Conference on Computer and Communications Security 
+(CCS 2012)
+
+[9] Jamshed, M., Go, Y., Park, K. "Suppressing Malicious Bot Traffic using 
+an Accurate Human Attester." in 8th USENIX Symposium on Networked Systems 
+Design and Implementation (NSDI 2011) (Poster)
+
+[10] Jamshed, M., Kim, W., Park, K. "Suppressing Bot Traffic with Accurate 
+Human Attestations." in 1st ACM Asia-Pacific Workshop on Systems (ApSys 2010) 
+held in conjunction with SIGCOMM 2010
+
+[11] Djalaliev, P., Jamshed, M., Farnan, N., Brustoloni, J.C. "Sentinel: 
+Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks." in 17th IEEE 
+International Conference on Computer Communications and Networks 
+(ICCCN 2008) Network Security Track.
+
+[12] Jamshed, M., Brustoloni, J. "In-Network Server-Directed Client 
+Authentication and Packet Classification." in 35th Annual IEEE Conference
+on Local Computer Networks (LCN) 2010
+---------------------------------------------------------------------------
+PROFESSIONAL SERVICE
+
+Program Committee Member: CAN 2017
+Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
+Review
+---------------------------------------------------------------------------
+HONORS
+
+NSDI Best Paper Award 2017 for mOS
+2nd Runner-up Samsung Humantech Paper Award 2016 for DFC
+NSDI Community Award 2014 for mTCP
+Runner-up Samsung Humantech Paper Award 2014 for mTCP
+"10 Achievements of 2012 that put KAIST on the Spotlight" for Kargus
+ACM SIGCOMM Travel Grant 2010
+Graduate Fellowship Spring 2006
+Undergraduate Dean's Honor List 2001-03
+---------------------------------------------------------------------------
+SKILLS
+
+C/C++, Java, C#, Python, CUDA, Lua, Awk, Javascript, Linux shell scripting,
+HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, LATEX
+---------------------------------------------------------------------------
+REFERENCES
+
+Available on request
+---------------------------------------------------------------------------
