@@ -179,6 +179,11 @@ Program Committee Member: CAN 2017
 Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
 Review
 ---------------------------------------------------------------------------
+PHD THESIS REVIEWER
+
+Syed Mohammad Irteza, "Towards Asymmetry Resilient Network Load Balancing 
+for Datacenters", November 2018
+---------------------------------------------------------------------------
 HONORS
 
 NSDI Best Paper Award 2017 for mOS
