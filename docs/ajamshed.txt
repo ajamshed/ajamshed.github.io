@@ -181,8 +181,8 @@ Review
 ---------------------------------------------------------------------------
 PHD THESIS REVIEWER
 
-Syed Mohammad Irteza, "Towards Asymmetry Resilient Network Load Balancing 
-for Datacenters", November 2018
+Syed Mohammad Irteza, "Resilient Network Load Balancing for Datacenters",
+November 2018
 ---------------------------------------------------------------------------
 HONORS
 
