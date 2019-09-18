@@ -33,8 +33,11 @@ Networked systems, distributed systems, network security & operating systems.
 ---------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
-Intel Labs, Infrastructure Research Group		 May 2017-onwards
-- Research Scientist
+Intel Labs, Telco Systems Research Group		 May 2017-onwards
+- Research Scientist: Member of the Open Mobile Evolved Core (OMEC) team
+that is maintaining ngic-rtc. Ngic-rtc is a open source control user plane
+separated (CUPS) 3GPP TS23501 based implementation of Evolved Packet Core
+(EPC) service & packet gateway functions.
 
 Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-Apr 2017
 - Postdoctoral Researcher
@@ -53,7 +56,20 @@ Syed Murad Ali, Toronto, Canada			  	       Summer 2004
 ---------------------------------------------------------------------------
 PROJECTS/SOFTWARE
 
-1. mOS STACK							  May 2016-
+1. OMEC PROJECT							  Feb 2019-
+The Open Mobile Evolved Core (OMEC) project is an initiative from the Open
+Networking Foundation (ONF) to create an open source virtualized evolved
+packet core for 4G/LTE networks. OMEC comprises of a number of VNFs
+including (i) OpenMME: a Mobility Management Entity function, (ii) C3PO:
+a suite packaging Home Subscription Service (HSS), Database, Charge Data
+Function (CDF), Charge Trigger Function (CTF), and Policy Control Rules
+Function (PCRF), and (iii) ngic-rtc: a control user plane separated (CUPS)
+3GPP TS23501 based Service and Packet gateway functions.
+- Role: Maintainer of ngic-rtc
+- Project homepage: http://www.omecproject.org/
+- Source code: https://github.com/omec-project/ngic-rtc
+
+2. mOS STACK							  May 2016-
 The mOS networking stack provides elegant abstractions for stateful flow
 processing tailored for middlebox applications. Our API allows developers
 to focus on the core application logic while it relieves the burden of
@@ -67,12 +83,12 @@ on-going with Intel folks.
 - Source code: https://github.com/ndsl-kaist/mOS-networking-stack
 - Related publication: Refer to our mOS paper at NSDI 2017
 
-2. PACKET BRICKS       	     	    	      	 		 Sept 2014-
+3. PACKET BRICKS       	     	    	      	 		 Sept 2014-
 A netmap-based packet layer for distributing and filtering traffic.
 - Role: Lead author & maintainer
 - Source code: https://github.com/bro/packet-bricks
 
-3. mTCP								 Sept 2013-
+4. mTCP								 Sept 2013-
 mTCP is a high-performance user-level TCP stack for multi-core systems
 that addresses the inefficiency from the ground up - from packet I/O and
 TCP connection management to the application interface. mTCP (1) allows
@@ -90,7 +106,7 @@ is on-going with Intel folks.
 - Source code: https://github.com/eunyoung14/mtcp/
 - Related publication: Refer to our mTCP paper at NSDI 2014
 
-4. KARGUS							  Oct 2012
+5. KARGUS							  Oct 2012
 Kargus is a highly-scalable software-based network intrusion detection
 system (NIDS) that runs on commodity PCs and its performance is comparable
 to hardware-based NIDSes. It effectively exploits the potentials of modern
@@ -102,7 +118,7 @@ that put KAIST on the Spotlight.”
 - Project homepage: http://shader.kaist.edu/kargus/
 - Related publication: Refer to our Kargus paper at CCS 2012
 
-5. HUMANSIGN							 Sept 2010
+6. HUMANSIGN							 Sept 2010
 An input device framework in which keystroke events are securely coupled
 with text-based content that is typed by humans with the end goal of
 reliable network payload delivery. This scheme is based on trusted
@@ -119,57 +135,66 @@ filter modules.
 ---------------------------------------------------------------------------
 SELECTED PUBLICATIONS
 
-[1] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
+[1] Moon, Y., Lee, S., Jamshed, M., Park, K. "AccelTCP: Accelerating
+Network Applications with Stateful TCP Offloading." in 17th USENIX
+Symposium on Networked Systems Design and Implementation (NSDI 2020)
+
+[2] Bashir, H., Faisal, A., Jamshed, M., Vondras, P., Iftikhar, A., Qazi,
+I., Dogar, F. "Reducing Tail Latency via Safe and Simple Duplication." in
+15th International Conference on emerging Networking EXperiments and
+Technologies (CoNEXT 2019)
+
+[3] Jamshed, M., Moon, Y., Kim, D., Han, D., Park, K. "mOS: A Reusable 
 Networking Stack for Flow Monitoring Middleboxes." in 14th
 USENIX Symposium on Networked Systems Design and Implementation (NSDI 2017)
 - NSDI Best Paper Award
 
-[2] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
+[4] Go, Y., Jamshed, M., Moon, Y., Hwang, C., Park, K. "APUNet: Revitalizing 
 GPU as Packet Processing Accelerator." in 14th USENIX Symposium
 on Networked Systems Design and Implementation (NSDI 2017)
 
-[3] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
+[5] Choi, B., Chae, J., Jamshed, M., Park, K., Han, D. "DFC: Accelerating 
 String Pattern Matching for Network Applications." in 13th USENIX Symposium 
 on Networked Systems Design and Implementation (NSDI 2016)
 
-[4] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Haetae: Scaling 
+[6] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Haetae: Scaling 
 the Performance of Network Intrusion Detection with Many-core Processors."
 in 18th International Symposium on Research in Attacks, Intrusions and
 Defenses (RAID 2015)
 
-[5] Jamshed, M., Kim, D., Moon, Y., Han, D., Park, K. "A Case for a 
+[7] Jamshed, M., Kim, D., Moon, Y., Han, D., Park, K. "A Case for a 
 Stateful Middlebox Networking Stack." in SIGCOMM Computer Communication
 Review, Rev. 45, Pg 355-356, August, 2015
 
-[6] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Scaling the 
+[8] Nam, J., Jamshed, M., Choi, B., Han, D., Park, K. "Scaling the 
 Performance of Network Intrusion Detection with Many-core Processors." in
 11th ACM/IEEE Symposium on Architectures for Networking and Communication 
 Systems (ANCS 2015) (Poster)
 
-[7] Jeong, E., Woo, S., Jamshed, M., Jeong, H., Ihm, S., Han, D., Park, K. 
+[9] Jeong, E., Woo, S., Jamshed, M., Jeong, H., Ihm, S., Han, D., Park, K. 
 "mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems." in
 11th USENIX Symposium on Networked Systems Design and Implementation 
 (NSDI 2014) - NSDI Community Award
 
-[8] Jamshed, M., Lee, J., Moon, S., Yun, I., Kim, D., Lee, S., Yi, Y., 
+[10] Jamshed, M., Lee, J., Moon, S., Yun, I., Kim, D., Lee, S., Yi, Y., 
 Park, K. "Kargus: a Highly-scalable Software-based Intrusion Detection 
 System." in 19th ACM Conference on Computer and Communications Security 
 (CCS 2012)
 
-[9] Jamshed, M., Go, Y., Park, K. "Suppressing Malicious Bot Traffic using 
+[11] Jamshed, M., Go, Y., Park, K. "Suppressing Malicious Bot Traffic using 
 an Accurate Human Attester." in 8th USENIX Symposium on Networked Systems 
 Design and Implementation (NSDI 2011) (Poster)
 
-[10] Jamshed, M., Kim, W., Park, K. "Suppressing Bot Traffic with Accurate 
+[12] Jamshed, M., Kim, W., Park, K. "Suppressing Bot Traffic with Accurate 
 Human Attestations." in 1st ACM Asia-Pacific Workshop on Systems (ApSys 2010) 
 held in conjunction with SIGCOMM 2010
 
-[11] Djalaliev, P., Jamshed, M., Farnan, N., Brustoloni, J.C. "Sentinel: 
+[13] Djalaliev, P., Jamshed, M., Farnan, N., Brustoloni, J.C. "Sentinel: 
 Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks." in 17th IEEE 
 International Conference on Computer Communications and Networks 
 (ICCCN 2008) Network Security Track.
 
-[12] Jamshed, M., Brustoloni, J. "In-Network Server-Directed Client 
+[14] Jamshed, M., Brustoloni, J. "In-Network Server-Directed Client 
 Authentication and Packet Classification." in 35th Annual IEEE Conference
 on Local Computer Networks (LCN) 2010
 ---------------------------------------------------------------------------
@@ -198,7 +223,8 @@ Undergraduate Dean's Honor List 2001-03
 SKILLS
 
 C/C++, Java, C#, Python, CUDA, Lua, Awk, Javascript, Linux shell scripting,
-HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, LATEX
+HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, Intel DPDK,
+LATEX
 ---------------------------------------------------------------------------
 REFERENCES
 
