@@ -156,7 +156,18 @@ value="Search NDSL" type="submit">
 	    <!--Star history: <a href="http://www.timqian.com/star-history/#ndsl-kaist/mOS-networking-stack">mOS</a>-->
 	    <hr>
 	  <p class="h4">
-	    V. High Speed IDS Benchmark Tool <br>
+	    V. OMEC <br>
+	  <p class="mytext2">
+	    Brief Description: Open source virtualized mobile core project from <a href="https://www.opennetworking.org/">ONF</a>. <br>
+	    Role: Co-maintainer.<br>
+	    Source: <a href="https://github.com/omec-project/ngic-rtc">https://github.com/omec-project/ngic-rtc</a> 
+	    (<img src="images/pink-watch.png" alt="" height="10" width="12"> <span id="watch-omec"></span>,
+	    <img src="images/pink-star.png" alt="" height="10" width="10"> <span id="star-omec"></span>, 
+	    <img src="images/pink-fork.png" alt="" height="10" width="10"> <span id="fork-omec"></span>)
+	    <!--Star history: <a href="http://www.timqian.com/star-history/#omec-project/ngic-rtc">OMEC</a>-->	    
+	    <hr>	    
+	  <p class="h4">
+	    VI. High Speed IDS Benchmark Tool <br>
 	  <p class="mytext2">
 	    Brief Description: A high speed IDS benchmark tool. <br>
 	    Role: Lead maintainer.<br>
@@ -255,6 +266,23 @@ href="http://www.sitewriters.co.uk/" target="_blank">Originally designed</a>
 	var ele9 = document.createElement("watch-mos");
     	ele9.innerText = "Hello!";
     	ele9 = document.getElementById("watch-mos");
+        ele9.innerText = watchers;
+    });
+
+    githubInfo("omec-project/ngic-rtc", function(stars, network, watchers) {
+	var ele7 = document.createElement("star-omec");
+    	ele7.innerText = "Hello!";
+	ele7 = document.getElementById("star-omec");
+        ele7.innerText = stars;
+
+	var ele8 = document.createElement("fork-omec");
+    	ele8.innerText = "Hello!";
+    	ele8 = document.getElementById("fork-omec");
+        ele8.innerText = network;
+
+	var ele9 = document.createElement("watch-omec");
+    	ele9.innerText = "Hello!";
+    	ele9 = document.getElementById("watch-omec");
         ele9.innerText = watchers;
     });
 </script>
