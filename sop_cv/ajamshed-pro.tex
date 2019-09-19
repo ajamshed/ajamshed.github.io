@@ -256,7 +256,7 @@ Networked systems, distributed systems, network security and operating systems.
 %(iii) Highly scalable intrusion detection systems: See [4] in Projects section for details. \\
 %(iv) Human (\& spam) detection in the Internet: See [5] in Projects section for details.} \\
 %
-\textbf{Intel Labs, Infrastructure Research Group} \hfill \textbf{May2017-onwards}
+\textbf{Intel Labs, Telco Systems Research Group} \hfill \textbf{May 2017-onwards}
 \begin{innerlist}
 \item {Research Scientist} \\
 \end{innerlist}
@@ -289,7 +289,15 @@ performances for an in-house system-on-chip network-attached storage device seri
 \end{innerlist}
 
 \section{Projects/ Software}
-{\textbf{1. m{OS} S{\footnotesize TACK}}} \hfill {May 2016-}
+{\textbf{1. O{\footnotesize MEC} P{\footnotesize ROJECT}}} \hfill {Feb 2019-}
+\begin{outerlist}
+\item[] {The Open Mobile Evolved Core (OMEC) project is an initiative from the Open Networking Foundation (ONF) to create an open source virtualized evolved packet core for 4G/LTE networks. OMEC comprises of a number of VNFs including (i) OpenMME: a Mobility Management Entity function, (ii) C3PO: a suite packaging Home Subscription Service (HSS), Database, Charge Data Function (CDF), Charge Trigger Function (CTF), and Policy Control Rules Function (PCRF), and (iii) ngic-rtc: a control user plane separated (CUPS) 3GPP TS23501 based Service and Packet gateway functions.}\\
+{\bf Role:} Co-maintainer of ngic-rtc \\
+{\bf Project homepage:} \href{http://www.omecproject.org/}{\texttt{http://www.omecproject.org/}} \\
+{\bf Source code:} \href{https://github.com/omec-project/ngic-rtc}{\texttt{https://github.com/omec-project/ngic-rtc}} \\
+\end{outerlist} 
+\ \\
+{\textbf{2. m{OS} S{\footnotesize TACK}}} \hfill {May 2016-}
 \begin{outerlist}
 \item[] {The mOS networking stack provides elegant abstractions for stateful flow processing tailored for middlebox applications. Our API allows developers to focus on the core application logic while it relieves the burden of dealing with low-level packet/flow processing themselves. Under the hood, the stack implements an efficient event system derived from mTCP, a high-performance user-level TCP/IP stack. mOS won the {\bf NSDI Best Paper Award 2017}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
 {\bf Role:} Lead author \& maintainer \\
@@ -298,7 +306,7 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Related publication:} Refer to our mOS paper at NSDI 2017
 \end{outerlist} 
 \ \\
-{\textbf{2. P{\footnotesize ACKET} B{\footnotesize RICKS}}}
+{\textbf{3. P{\footnotesize ACKET} B{\footnotesize RICKS}}}
         \hfill {Sept 2014-}
 \begin{outerlist}
 \item[] {A netmap-based packet layer for distributing and filtering traffic}\\
@@ -306,7 +314,7 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Source code:} \href{https://github.com/bro/packet-bricks}{\texttt{https://github.com/bro/packet-bricks}} \\
 \end{outerlist} 
 \ \\
-{\textbf{3. m{TCP}}}  \hfill {Sept 2013-}
+{\textbf{4. m{TCP}}}  \hfill {Sept 2013-}
 \begin{outerlist}
 \item[] {mTCP is a high-performance user-level TCP stack for multi-core systems that addresses the inefficiency from the ground up - from packet I/O and TCP connection management to the application interface. mTCP (1) allows efficient flow-level event aggregation, and (2) performs batch processing of RX/TX packets for high I/O efficiency. mTCP improves the performance of small message transactions by a factor 25 and 3 than that of the latest Linux TCP stack and the best-known research prototype. It also improves the performance of various popular applications by 33\% to 320\% compared with those on the Linux stack. mTCP won the {\bf NSDI Community Award 2014} and was declared runner-up in the {\bf Samsung HumanTech Paper Award 2014}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
 {\bf Role:} Co-author \& co-lead maintainer \\
@@ -315,7 +323,7 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Related publication:} Refer to our mTCP paper at NSDI 2014
 \end{outerlist}
 \ \\
-{\textbf{4. K{\footnotesize ARGUS}}}
+{\textbf{5. K{\footnotesize ARGUS}}}
         \hfill {Oct 2012}
 \begin{outerlist}
 \item[] {Kargus is a highly-scalable software-based network intrusion detection system (NIDS) that runs on commodity PCs and its performance is comparable to hardware-based NIDSes. It effectively exploits the potentials of modern hardware innovations such as multi-core CPUs, heterogeneous GPUs and multi-queue interface of NICs that drives its monitoring rate by up to 33 Gbps in real time. Kargus was mentioned in the {\bf ``10 Achievements of 2012 that put KAIST on the Spotlight.''}}\\
@@ -324,7 +332,7 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Related publication:} Refer to our Kargus paper at CCS 2012
 \end{outerlist}
 \ \\
-{\textbf{5. H{\footnotesize UMAN}S{\footnotesize IGN}}}
+{\textbf{6. H{\footnotesize UMAN}S{\footnotesize IGN}}}
         \hfill {Sept 2010}
 \begin{outerlist}
 \item[] {An input device framework in which keystroke events are securely coupled with text-based content that is typed by humans with the end goal of reliable network payload delivery. This scheme is based on trusted computing principles that places the root of trust on a customized input device running a trusted platform module (TPM) chip and a small attester daemon within it. Each input event generates a cryptographic hash that attests to human activity and the combined message attestation (derived from such events) gets a third-party verifiable digital signature. These human attestations are then attached to the actual messages which ultimately assist in reducing false positive rates in the recipients' filter modules. \\}
@@ -334,31 +342,42 @@ performances for an in-house system-on-chip network-attached storage device seri
 \  
 
 \section{Selected Publications}
-[1] {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Donghwi Kim, Dongsu Han,
+[1] YoungGyoun Moon, SeungEon Lee, {\bf Muhammad Asim Jamshed}, KyoungSoo Park,
+{``AccelTCP: Accelerating Network Applications with Stateful TCP Offloading.''}
+In the $17^{th}$ USENIX Symposium on Networked Systems Design and Implementation
+(NSDI '20), 2020.\\
+
+[2] Hafiz Muhamamd Mohsin Bashir, Abdullah bin Faisal, {\bf Muhammad Asim Jamshed},
+Peter Vondras, Ali Musa Iftikhar, Ihsan Qazi, Fahad Dogar,
+{``Reducing Tail Latency via Safe and Simple Duplication.''}
+In the $15^{th}$ International Conference on emerging Networking EXperiments and
+Technologies (CoNEXT '19), 2019.\\
+
+[3] {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Donghwi Kim, Dongsu Han,
 KyoungSoo Park,
 {``mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes,'' }
    In the $14^{th}$ USENIX Symposium on Networked Systems Design
    and Implementation (NSDI '17), 2017.\\
 
-[2] Younghwan Go, {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Changho
+[4] Younghwan Go, {\bf Muhammad Asim Jamshed}, YoungGyoun Moon, Changho
 Hwang, KyoungSoo Park,
 {``APUNet: Revitalizing GPU as Packet Processing Accelerator,'' }
    In the $14^{th}$ USENIX Symposium on Networked Systems Design
    and Implementation (NSDI '17), 2017.\\
 
-[3] Byungkwon Choi, Jongwook Chae, {\bf Muhammad Asim Jamshed}, KyoungSoo
+[5] Byungkwon Choi, Jongwook Chae, {\bf Muhammad Asim Jamshed}, KyoungSoo
 Park, Dongsu Han,
 {``DFC: Accelerating String Pattern Matching for Network Applications,'' }
    In Proceedings of the $13^{th}$ USENIX Symposium on Networked Systems
    Design and Implementation (NSDI '16), 2016.\\
 
-[4] Jaehyun Nam, {\bf Muhammad Asim Jamshed}, Byungkwon Choi, Dongsu Han,
+[6] Jaehyun Nam, {\bf Muhammad Asim Jamshed}, Byungkwon Choi, Dongsu Han,
 KyoungSoo Park,
 { ``Haetae: Scaling the Performance of Network Intrusion Detection with Many-core Processors," }
     In Proceedings of the $18^{th}$ International Symposium on Research in
     Attacks, Intrusions and Defenses (RAID '15), 2015.\\
 
-[5] {\bf Muhammad Asim Jamshed}, Donghwi Kim, YoungGyoun Moon, Dongsu Han,
+[7] {\bf Muhammad Asim Jamshed}, Donghwi Kim, YoungGyoun Moon, Dongsu Han,
 KyoungSoo Park,
 { ``A Case for a Stateful Middlebox Networking Stack," }
     In SIGCOMM Computer Communication Review, Rev. 45, Pg 355-356, August, 2015.\\
@@ -368,35 +387,35 @@ KyoungSoo Park,
 %%    $11^{th}$ ACM/IEEE Symposium on Architectures for Networking and Communication Systems 
 %%   (ANCS 2015) (Poster)\\
 
-[6] Eunyoung Jeong, Shinae Woo, {\bf Muhammad Asim Jamshed}, Haewon Jeong,
+[8] Eunyoung Jeong, Shinae Woo, {\bf Muhammad Asim Jamshed}, Haewon Jeong,
 Sunghwan Ihm, Dongsu Han, KyoungSoo Park,
 { ``mTCP: a Highly Scalable User-level TCP Stack for Multicore Systems," }
     In Proceedings of the $11^{th}$ USENIX Symposium on Networked Systems
     Design and Implementation (NSDI '14), 2014 - {\bf NSDI Community Award}.\\
 
-[7] {\bf Muhammad Asim Jamshed}, Jihyung Lee, Sangwoo Moon, Insu Yun,
+[9] {\bf Muhammad Asim Jamshed}, Jihyung Lee, Sangwoo Moon, Insu Yun,
 Deokjin Kim, Sungryoul Lee, Yung Yi, KyoungSoo Park,
 { ``Kargus: a Highly-scalable Software-based Intrusion Detection System," }
     In Proceedings of the $19^{th}$ ACM Conference on Computer and
     Communications Security (CCS '12), 2012. \\
 
-[8] {\bf Muhammad Asim Jamshed}, Younghwan Go, KyoungSoo Park,
+[10] {\bf Muhammad Asim Jamshed}, Younghwan Go, KyoungSoo Park,
 { ``Suppressing Malicious Bot Traffic using an Accurate Human Attester," }
      In Proceedings of the $8^{th}$ USENIX Symposium on Networked Systems
      Design and Implementation (NSDI '11), 2011 (Poster).\\
      
-[9] {\bf Muhammad Asim Jamshed}, Wonho Kim, KyoungSoo Park, 
+[11] {\bf Muhammad Asim Jamshed}, Wonho Kim, KyoungSoo Park, 
      { ``Suppressing Bot Traffic with Accurate Human Attestations," }
      In Proceedings of the $1^{st}$ ACM Asia-Pacific Workshop on Systems
      (ApSys '10) held in conjunction with SIGCOMM '10, 2010.\\
 
-[10] Peter Djalaliev, {\bf Muhammad Asim Jamshed}, Nicholas Farnan, Jose
+[12] Peter Djalaliev, {\bf Muhammad Asim Jamshed}, Nicholas Farnan, Jose
 Brustoloni, 
 	{``Sentinel: Hardware-Accelerated Mitigation of Bot-Based DDoS Attacks,''}
 	In Proceedings of the $17^{th}$ IEEE International Conference on
 	Computer Communications and Networks (ICCCN '08) Network Security Track, 2008. \\
 
-[11] {\bf Muhammad Asim Jamshed}, Jose Brustoloni,
+[13] {\bf Muhammad Asim Jamshed}, Jose Brustoloni,
 	{``In-Network Server-Directed Client Authentication and Packet Classification,"}
 	In Proceedings of the $35^{th}$ Annual IEEE Conference on Local 
 	Computer Networks (LCN '10), 2010.\\
@@ -502,7 +521,7 @@ Graduate Fellowship Spring 2006 \\
 Undergraduate Dean's Honor List 2001-03
 
 \section{Skills}
-C/C++, Java, C$\#$, Python, CUDA, Lua, Awk, Javascript, Linux shell scripting, HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, \LaTeX \\
+C/C++, Java, C$\#$, Python, CUDA, Lua, Awk, Javascript, Linux shell scripting, HTML, XML, Unix/GNU Linux, x86 Assembly, TILE-Gx programming, Intel DPDK, \LaTeX \\
 
 \section{References}
 Available on request
