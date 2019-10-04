@@ -64,7 +64,8 @@ including (i) OpenMME: a Mobility Management Entity function, (ii) C3PO:
 a suite packaging Home Subscription Service (HSS), Database, Charge Data
 Function (CDF), Charge Trigger Function (CTF), and Policy Control Rules
 Function (PCRF), and (iii) ngic-rtc: a control user plane separated (CUPS)
-3GPP TS23501 based Service and Packet gateway functions.
+3GPP TS23501 based Service and Packet gateway functions. OMEC won the Intel
+Division Recognition Award 2019.
 - Role: Maintainer of ngic-rtc
 - Project homepage: http://www.omecproject.org/
 - Source code: https://github.com/omec-project/ngic-rtc
@@ -211,6 +212,7 @@ November 2018
 ---------------------------------------------------------------------------
 HONORS
 
+Intel Division Recognition Award for OMEC
 NSDI Best Paper Award 2017 for mOS
 2nd Runner-up Samsung Humantech Paper Award 2016 for DFC
 NSDI Community Award 2014 for mTCP
