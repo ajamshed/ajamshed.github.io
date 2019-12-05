@@ -201,7 +201,7 @@ on Local Computer Networks (LCN) 2010
 ---------------------------------------------------------------------------
 PROFESSIONAL SERVICE
 
-Program Committee Member: CAN 2017
+Program Committee Member: ACM CAN 2017, ACM APNET 2020
 Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
 Review
 ---------------------------------------------------------------------------
