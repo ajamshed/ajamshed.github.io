@@ -2,8 +2,8 @@ MUHAMMAD ASIM JAMSHED, Ph.D.
 ---------------------------------------------------------------------------
 CONTACT INFORMATION
 
-Intel Jones Farm 2 (JF2) Building
-2111 NE 25th Ave, Hillsboro, OR 97124
+SEA42 - Corp Office - re:Invent Building
+2121 8th Ave, Seattle, WA 98121
 U.S.A.
 
 Voice: +1 (971) 330 6282
@@ -33,7 +33,10 @@ Networked systems, distributed systems, network security & operating systems.
 ---------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
-Intel Labs, Telco Systems Research Group		 May 2017-onwards
+AWS, EC2 Virtual Private Cloud Team                      Aug 2020-onwards
+- Software Development Engineer II
+
+Intel Labs, Telco Systems Research Group		 May 2017-Aug 2020
 - Research Scientist: Member of the Open Mobile Evolved Core (OMEC) team
 that is maintaining ngic-rtc. Ngic-rtc is a open source control user plane
 separated (CUPS) 3GPP TS23501 based implementation of Evolved Packet Core
@@ -201,7 +204,7 @@ on Local Computer Networks (LCN) 2010
 ---------------------------------------------------------------------------
 PROFESSIONAL SERVICE
 
-Program Committee Member: ACM CAN 2017, ACM APNET 2020
+Program Committee Member: ACM CAN 2017, ACM APNET 2020, ACM/IEEE ANCS 2021
 Journal Reviewer: Elsevier Computer Networks Journal, Computer Communication 
 Review
 ---------------------------------------------------------------------------
@@ -212,6 +215,7 @@ November 2018
 ---------------------------------------------------------------------------
 HONORS
 
+ONC OMEC/COMAC Community Award for OMEC
 Intel Division Recognition Award for OMEC
 NSDI Best Paper Award 2017 for mOS
 2nd Runner-up Samsung Humantech Paper Award 2016 for DFC
