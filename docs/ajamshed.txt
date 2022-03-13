@@ -1,5 +1,5 @@
 MUHAMMAD ASIM JAMSHED, Ph.D.
----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 CONTACT INFORMATION
 
 SEA42 - Corp Office - re:Invent Building
@@ -9,14 +9,14 @@ U.S.A.
 Voice: +1 (971) 330 6282
 E-mail: asim.jamshed@gmail.com
 WWW: https://ajamshed.github.io/
----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 EDUCATION
 
 Korea Advanced Institute of Science & Technology (KAIST)
 Daejeon, Republic of Korea
 PhD, Electrical Engineering (Feb 2017)
 - Thesis title: Networking Stack Abstraction for High-performance
-  	 	Flow-processing Middleboxes
+                Flow-processing Middleboxes
 - Advisor: KyoungSoo Park
 
 University of Pittsburgh, Pittsburgh, Pennsylvania, USA
@@ -26,40 +26,53 @@ MS, Computer Science (Apr 2010)
 Lahore University of Management Sciences, Lahore, Pakistan
 BSc (Hons), Computer Science, (May 2005)
 - Minor in Mathematics
----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 RESEARCH INTERESTS
 
 Networked systems, distributed systems, network security & operating systems.
----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
-AWS, EC2 Virtual Private Cloud Team                      Aug 2020-onwards
-- Software Development Engineer II
+AWS, EC2 Virtual Private Cloud (VPC) Dataplane Team         Aug 2020-onwards
+- Software Development Engineer II: Building Elastic Network Interface (ENI)
+features for Nitro-based EC2 droplets.
 
-Intel Labs, Telco Systems Research Group		 May 2017-Aug 2020
+Intel Labs, Telco Systems Research Group                   May 2017-Aug 2020
 - Research Scientist: Member of the Open Mobile Evolved Core (OMEC) team
-that is maintaining ngic-rtc. Ngic-rtc is a open source control user plane
-separated (CUPS) 3GPP TS23501 based implementation of Evolved Packet Core
-(EPC) service & packet gateway functions.
+that maintains Aether User Plane Function (UPF). Aether UPF is an open
+source 4G/5G control user plane separated (CUPS) 3GPP TS23501 based
+implementation making use of the PFCP protocol for the communication
+between SMF (5G) or SPGW-C (4G) and UPF.
 
-Korea Advanced Institute of Science & Technology (KAIST) Feb 2017-Apr 2017
+Korea Advanced Institute of Science & Technology (KAIST)   Feb 2017-Apr 2017
 - Postdoctoral Researcher
 
-International Computer Science Institute(ICSI),Berkeley  Summer 14 & Fall 15
-- Research Intern, Bro team: Developed a packet acquisition & filter
+International Computer Science Institute(ICSI),Berkeley Summer 14 & Fall 15
+- Research Intern, Zeek team: Developed a packet acquisition & filter
 framework for 10 Gbps network applications.
 
-Palmchip Corporation, Lahore, Pakistan		        May 2005-July 2006
+Palmchip Corporation, Lahore, Pakistan                   May 2005-July 2006
 - Software Engineer, Embedded Systems Group: Optimized bootloader & 
 filesystem performances for an in-house system-on-chip network-attached 
 storage device series.
 
-Syed Murad Ali, Toronto, Canada			  	       Summer 2004
+Syed Murad Ali, Toronto, Canada                                 Summer 2004
 - Intern, Web Development (PHP & HTML)
 ---------------------------------------------------------------------------
 PROJECTS/SOFTWARE
 
-1. OMEC PROJECT							  Feb 2019-
+1. AETHER PROJECT                                         Feb 2020-Aug 2020
+Aether is the first open source 5G Connected Edge platform for enabling
+enterprise digital transformation. It provides mobile connectivity and
+edge cloud services for distributed enterprise networks as a cloud managed
+offering. Aether is an open source platform optimized for multi-cloud
+deployments, and simultaneous support for wireless connectivity over
+licensed, unlicensed and lightly-licensed (CBRS) spectrum.
+- Role: Lead author and maintainer of Aether UPF
+- Project homepage: https://opennetworking.org/aether/
+- Source code: https://github.com/omec-project/upf
+
+2. OMEC PROJECT	                                          Feb 2019-Aug 2020
 The Open Mobile Evolved Core (OMEC) project is an initiative from the Open
 Networking Foundation (ONF) to create an open source virtualized evolved
 packet core for 4G/LTE networks. OMEC comprises of a number of VNFs
@@ -73,26 +86,24 @@ Division Recognition Award 2019.
 - Project homepage: http://www.omecproject.org/
 - Source code: https://github.com/omec-project/ngic-rtc
 
-2. mOS STACK							  May 2016-
+3. mOS STACK                                              May 2016-Mar 2019
 The mOS networking stack provides elegant abstractions for stateful flow
 processing tailored for middlebox applications. Our API allows developers
 to focus on the core application logic while it relieves the burden of
 dealing with low-level packet/flow processing themselves. Under the hood,
 the stack implements an efficient event system derived from mTCP, a high
 performance user-level TCP/IP stack. mOS won the NSDI Best Paper Award 2017.
-We plan to move the project to DPDK.org for broader impact. Discussion is
-on-going with Intel folks.
 - Role: Lead author & maintainer
 - Project homepage: http://mos.kaist.edu/
-- Source code: https://github.com/ndsl-kaist/mOS-networking-stack
+- Source code: https://github.com/mos-stack/mOS-networking-stack
 - Related publication: Refer to our mOS paper at NSDI 2017
 
-3. PACKET BRICKS       	     	    	      	 		 Sept 2014-
+4. PACKET BRICKS                                        Sept 2014-Jun 2016
 A netmap-based packet layer for distributing and filtering traffic.
 - Role: Lead author & maintainer
-- Source code: https://github.com/bro/packet-bricks
+- Source code: https://github.com/zeek/packet-bricks
 
-4. mTCP								 Sept 2013-
+5. mTCP                                                 Sept 2013-Nov 2019
 mTCP is a high-performance user-level TCP stack for multi-core systems
 that addresses the inefficiency from the ground up - from packet I/O and
 TCP connection management to the application interface. mTCP (1) allows
@@ -103,14 +114,12 @@ Linux TCP stack and the best-known research prototype. It also improves
 the performance of various popular applications by 33% to 320% compared
 with those on the Linux stack. mTCP won the NSDI Community Award 2014
 and was declared runner-up in the Samsung HumanTech Paper Award 2014.
-We plan to move the project to DPDK.org for broader impact. Discussion
-is on-going with Intel folks.
 - Role: Co-author & co-lead maintainer
 - Project homepage: http://shader.kaist.edu/mtcp/
-- Source code: https://github.com/eunyoung14/mtcp/
+- Source code: https://github.com/mtcp-stack/mtcp/
 - Related publication: Refer to our mTCP paper at NSDI 2014
 
-5. KARGUS							  Oct 2012
+6. KARGUS							  Oct 2012
 Kargus is a highly-scalable software-based network intrusion detection
 system (NIDS) that runs on commodity PCs and its performance is comparable
 to hardware-based NIDSes. It effectively exploits the potentials of modern
@@ -122,7 +131,7 @@ that put KAIST on the Spotlight.”
 - Project homepage: http://shader.kaist.edu/kargus/
 - Related publication: Refer to our Kargus paper at CCS 2012
 
-6. HUMANSIGN							 Sept 2010
+7. HUMANSIGN							 Sept 2010
 An input device framework in which keystroke events are securely coupled
 with text-based content that is typed by humans with the end goal of
 reliable network payload delivery. This scheme is based on trusted

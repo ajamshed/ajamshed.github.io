@@ -275,7 +275,7 @@ Networked systems, distributed systems, network security and operating systems.
 \textbf{International Computer Science Institute, Berkeley, CA, US}  
 				\hfill \textbf{Summer '14 $\&$ Fall '15}
 \begin{innerlist}
-\item {Research Intern, Bro team: Developed a packet acquisition
+\item {Research Intern, Zeek team: Developed a packet acquisition
 \& filter framework for 10 Gbps network applications.} \\
 \end{innerlist}
 
@@ -294,7 +294,15 @@ performances for an in-house system-on-chip network-attached storage device seri
 \end{innerlist}
 
 \section{Projects/ Software}
-{\textbf{1. O{\footnotesize MEC} P{\footnotesize ROJECT}}} \hfill {Feb 2019-}
+{\textbf{1. A{\footnotesize ETHER} P{\footnotesize ROJECT}}} \hfill {Feb 2020-Aug 2020}
+\begin{outerlist}
+\item[] {Aether is the first open source 5G Connected Edge platform for enabling enterprise digital transformation. It provides mobile connectivity and edge cloud services for distributed enterprise networks as a cloud managed offering. Aether is an open source platform optimized for multi-cloud deployments, and simultaneous support for wireless connectivity over licensed, unlicensed and lightly-licensed (CBRS) spectrum.}\\
+{\bf Role:} Lead author and maintainer of Aether UPF \\
+{\bf Project homepage:} \href{https://opennetworking.org/aether/}{\texttt{https://opennetworking.org/aether/}} \\
+{\bf Source code:} \href{https://github.com/omec-project/upf}{\texttt{https://github.com/omec-project/upf}} \\
+\end{outerlist} 
+\ \\
+{\textbf{2. O{\footnotesize MEC} P{\footnotesize ROJECT}}} \hfill {Feb 2019-Aug 2020}
 \begin{outerlist}
 \item[] {The Open Mobile Evolved Core (OMEC) project is an initiative from the Open Networking Foundation (ONF) to create an open source virtualized evolved packet core for 4G/LTE networks. OMEC comprises of a number of VNFs including (i) OpenMME: a Mobility Management Entity function, (ii) C3PO: a suite packaging Home Subscription Service (HSS), Database, Charge Data Function (CDF), Charge Trigger Function (CTF), and Policy Control Rules Function (PCRF), and (iii) ngic-rtc: a control user plane separated (CUPS) 3GPP TS23501 based Service and Packet gateway functions. {\bf OMEC won the Intel Division Recognition Award 2019.}}\\
 {\bf Role:} Co-maintainer of ngic-rtc \\
@@ -302,33 +310,33 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Source code:} \href{https://github.com/omec-project/ngic-rtc}{\texttt{https://github.com/omec-project/ngic-rtc}} \\
 \end{outerlist} 
 \ \\
-{\textbf{2. m{OS} S{\footnotesize TACK}}} \hfill {May 2016-}
+{\textbf{3. m{OS} S{\footnotesize TACK}}} \hfill {May 2016-Mar 2019}
 \begin{outerlist}
-\item[] {The mOS networking stack provides elegant abstractions for stateful flow processing tailored for middlebox applications. Our API allows developers to focus on the core application logic while it relieves the burden of dealing with low-level packet/flow processing themselves. Under the hood, the stack implements an efficient event system derived from mTCP, a high-performance user-level TCP/IP stack. mOS won the {\bf NSDI Best Paper Award 2017}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
+\item[] {The mOS networking stack provides elegant abstractions for stateful flow processing tailored for middlebox applications. Our API allows developers to focus on the core application logic while it relieves the burden of dealing with low-level packet/flow processing themselves. Under the hood, the stack implements an efficient event system derived from mTCP, a high-performance user-level TCP/IP stack. mOS won the {\bf NSDI Best Paper Award 2017}}\\
 {\bf Role:} Lead author \& maintainer \\
 {\bf Project homepage:} \href{http://mos.kaist.edu/}{\texttt{http://mos.kaist.edu/}} \\
-{\bf Source code:} \href{https://github.com/ndsl-kaist/mOS-networking-stack}{\texttt{https://github.com/ndsl-kaist/mOS-networking-stack}} \\
+{\bf Source code:} \href{https://github.com/mos-stack/mOS-networking-stack}{\texttt{https://github.com/mos-stack/mOS-networking-stack}} \\
 {\bf Related publication:} Refer to our mOS paper at NSDI 2017
 \end{outerlist} 
 \ \\
-{\textbf{3. P{\footnotesize ACKET} B{\footnotesize RICKS}}}
-        \hfill {Sept 2014-}
+{\textbf{4. P{\footnotesize ACKET} B{\footnotesize RICKS}}}
+        \hfill {Sept 2014-Jun 2016}
 \begin{outerlist}
 \item[] {A netmap-based packet layer for distributing and filtering traffic}\\
 {\bf Role:} Lead author \& maintainer \\
-{\bf Source code:} \href{https://github.com/bro/packet-bricks}{\texttt{https://github.com/bro/packet-bricks}} \\
+{\bf Source code:} \href{https://github.com/zeek/packet-bricks}{\texttt{https://github.com/zeek/packet-bricks}} \\
 \end{outerlist} 
 \ \\
-{\textbf{4. m{TCP}}}  \hfill {Sept 2013-}
+{\textbf{5. m{TCP}}}  \hfill {Sept 2013-Nov 2019}
 \begin{outerlist}
-\item[] {mTCP is a high-performance user-level TCP stack for multi-core systems that addresses the inefficiency from the ground up - from packet I/O and TCP connection management to the application interface. mTCP (1) allows efficient flow-level event aggregation, and (2) performs batch processing of RX/TX packets for high I/O efficiency. mTCP improves the performance of small message transactions by a factor 25 and 3 than that of the latest Linux TCP stack and the best-known research prototype. It also improves the performance of various popular applications by 33\% to 320\% compared with those on the Linux stack. mTCP won the {\bf NSDI Community Award 2014} and was declared runner-up in the {\bf Samsung HumanTech Paper Award 2014}. We plan to move the project to DPDK.org for broader impact. Discussion is on-going with Intel folks.}\\
+\item[] {mTCP is a high-performance user-level TCP stack for multi-core systems that addresses the inefficiency from the ground up - from packet I/O and TCP connection management to the application interface. mTCP (1) allows efficient flow-level event aggregation, and (2) performs batch processing of RX/TX packets for high I/O efficiency. mTCP improves the performance of small message transactions by a factor 25 and 3 than that of the latest Linux TCP stack and the best-known research prototype. It also improves the performance of various popular applications by 33\% to 320\% compared with those on the Linux stack. mTCP won the {\bf NSDI Community Award 2014} and was declared runner-up in the {\bf Samsung HumanTech Paper Award 2014}}\\
 {\bf Role:} Co-author \& co-lead maintainer \\
 {\bf Project homepage:} \href{http://shader.kaist.edu/mtcp/}{\texttt{http://shader.kaist.edu/mtcp/}} \\
-{\bf Source code:} \href{https://github.com/eunyoung14/mtcp/}{\texttt{https://github.com/eunyoung14/mtcp/}} \\
+{\bf Source code:} \href{https://github.com/mtcp-stack/mtcp/}{\texttt{https://github.com/mtcp-stack/mtcp/}} \\
 {\bf Related publication:} Refer to our mTCP paper at NSDI 2014
 \end{outerlist}
 \ \\
-{\textbf{5. K{\footnotesize ARGUS}}}
+{\textbf{6. K{\footnotesize ARGUS}}}
         \hfill {Oct 2012}
 \begin{outerlist}
 \item[] {Kargus is a highly-scalable software-based network intrusion detection system (NIDS) that runs on commodity PCs and its performance is comparable to hardware-based NIDSes. It effectively exploits the potentials of modern hardware innovations such as multi-core CPUs, heterogeneous GPUs and multi-queue interface of NICs that drives its monitoring rate by up to 33 Gbps in real time. Kargus was mentioned in the {\bf ``10 Achievements of 2012 that put KAIST on the Spotlight.''}}\\
@@ -337,7 +345,7 @@ performances for an in-house system-on-chip network-attached storage device seri
 {\bf Related publication:} Refer to our Kargus paper at CCS 2012
 \end{outerlist}
 \ \\
-{\textbf{6. H{\footnotesize UMAN}S{\footnotesize IGN}}}
+{\textbf{7. H{\footnotesize UMAN}S{\footnotesize IGN}}}
         \hfill {Sept 2010}
 \begin{outerlist}
 \item[] {An input device framework in which keystroke events are securely coupled with text-based content that is typed by humans with the end goal of reliable network payload delivery. This scheme is based on trusted computing principles that places the root of trust on a customized input device running a trusted platform module (TPM) chip and a small attester daemon within it. Each input event generates a cryptographic hash that attests to human activity and the combined message attestation (derived from such events) gets a third-party verifiable digital signature. These human attestations are then attached to the actual messages which ultimately assist in reducing false positive rates in the recipients' filter modules. \\}
