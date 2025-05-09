@@ -10,34 +10,16 @@ Voice: +1 (971) 330 6282
 E-mail: asim.jamshed@gmail.com
 WWW: https://ajamshed.github.io/
 ----------------------------------------------------------------------------
-EDUCATION
-
-Korea Advanced Institute of Science & Technology (KAIST)
-Daejeon, Republic of Korea
-PhD, Electrical Engineering (Feb 2017)
-- Thesis title: Networking Stack Abstraction for High-performance
-                Flow-processing Middleboxes
-- Advisor: KyoungSoo Park
-
-University of Pittsburgh, Pittsburgh, Pennsylvania, USA
-MS, Computer Science (Apr 2010)
-- Advisors: KyoungSoo Park & Daniel Moss'e
-
-Lahore University of Management Sciences, Lahore, Pakistan
-BSc (Hons), Computer Science, (May 2005)
-- Minor in Mathematics
-----------------------------------------------------------------------------
-RESEARCH INTERESTS
+INTERESTS
 
 Networked systems, distributed systems, network security & operating systems.
 ----------------------------------------------------------------------------
 EMPLOYMENT EXPERIENCE
 
 AWS, EC2 Virtual Private Cloud (VPC) Dataplane Team         Aug 2020-onwards
-- Software Development Engineer II: Building Elastic Network Interface (ENI)
-features for Nitro-based droplets. Developing next generation VPC tools for
-network monitoring & diagnostics. Also closely collaborating with the
-reliability engineering team on CI/CD pipeline tasks. 
+- Software Development Engineer II: Building next generation Virtual Private
+Cloud (VPC) features for Nitro-based droplets. Also closely collaborating
+with the reliability engineering team on CI/CD pipeline tasks. 
 
 Intel Labs, Telco Systems Research Group                   May 2017-Aug 2020
 - Research Scientist: Member of the Open Mobile Evolved Core (OMEC) team
@@ -47,11 +29,13 @@ implementation making use of the PFCP protocol for the communication
 between SMF (5G) or SPGW-C (4G) and UPF.
 
 Korea Advanced Institute of Science & Technology (KAIST)   Feb 2017-Apr 2017
-- Postdoctoral Researcher
+- Postdoctoral Researcher: Member of the research team that worked on the
+mOS project: a networking stack that provides abstractions for stateful
+flow processing for middlebox applications.
 
 International Computer Science Institute(ICSI),Berkeley Summer 14 & Fall 15
 - Research Intern, Zeek team: Developed a packet acquisition & filter
-framework for 10 Gbps network applications.
+framework for 10+ Gbps network applications.
 
 Palmchip Corporation, Lahore, Pakistan                   May 2005-July 2006
 - Software Engineer, Embedded Systems Group: Optimized bootloader & 
@@ -59,7 +43,7 @@ filesystem performances for an in-house system-on-chip network-attached
 storage device series.
 
 Syed Murad Ali, Toronto, Canada                                 Summer 2004
-- Intern, Web Development (PHP & HTML)
+- Intern, Web Development (PHP & HTML development)
 ---------------------------------------------------------------------------
 PROJECTS/SOFTWARE
 
@@ -148,6 +132,23 @@ filter modules.
 - Role: Lead author
 - Related publication: Refer to our HumanSign paper at APSYS 2010
 ---------------------------------------------------------------------------
+EDUCATION
+
+Korea Advanced Institute of Science & Technology (KAIST)
+Daejeon, Republic of Korea
+PhD, Electrical Engineering (Feb 2017)
+- Thesis title: Networking Stack Abstraction for High-performance
+                Flow-processing Middleboxes
+- Advisor: KyoungSoo Park
+
+University of Pittsburgh, Pittsburgh, Pennsylvania, USA
+MS, Computer Science (Apr 2010)
+- Advisors: KyoungSoo Park & Daniel Moss'e
+
+Lahore University of Management Sciences, Lahore, Pakistan
+BSc (Hons), Computer Science, (May 2005)
+- Minor in Mathematics
+----------------------------------------------------------------------------
 SELECTED PUBLICATIONS
 
 [1] Moon, Y., Lee, S., Jamshed, M., Park, K. "AccelTCP: Accelerating
