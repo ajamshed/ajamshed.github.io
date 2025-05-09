@@ -80,7 +80,7 @@ dealing with low-level packet/flow processing themselves. Under the hood,
 the stack implements an efficient event system derived from mTCP, a high
 performance user-level TCP/IP stack. mOS won the NSDI Best Paper Award 2017.
 - Role: Lead author & maintainer
-- Project homepage: http://mos.kaist.edu/
+- Project homepage: https://tnet.snu.ac.kr/mos/
 - Source code: https://github.com/mos-stack/mOS-networking-stack
 - Related publication: Refer to our mOS paper at NSDI 2017
 
@@ -101,7 +101,7 @@ the performance of various popular applications by 33% to 320% compared
 with those on the Linux stack. mTCP won the NSDI Community Award 2014
 and was declared runner-up in the Samsung HumanTech Paper Award 2014.
 - Role: Co-author & co-lead maintainer
-- Project homepage: http://shader.kaist.edu/mtcp/
+- Project homepage: https://tnet.snu.ac.kr/mtcp/
 - Source code: https://github.com/mtcp-stack/mtcp/
 - Related publication: Refer to our mTCP paper at NSDI 2014
 
@@ -114,7 +114,7 @@ multi-queue interface of NICs that drives its monitoring rate by up to 33
 Gbps in real time. Kargus was mentioned in the “10 Achievements of 2012
 that put KAIST on the Spotlight.”
 - Role: Lead author
-- Project homepage: http://shader.kaist.edu/kargus/
+- Project homepage: https://tnet.snu.ac.kr/kargus/
 - Related publication: Refer to our Kargus paper at CCS 2012
 
 7. HUMANSIGN							 Sept 2010
